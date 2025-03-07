@@ -1,0 +1,181 @@
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Strength of cryptographic algorithm}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\brokencrypto\BrokenCrypto1.java"
+"```
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB mode}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\ecbmode\EcbMode1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\insecurerandom\InsecureRandom1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\pbeparameters\PBEParameters1.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Excessive Iterations}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\pbeparameters\PBEParameters2.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\smallkeysize\SmallKeySize1.java"
+"```
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\falsepositive\staticiv\StaticIv1.java"
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Use of weak cryptographic algorithm (DES)
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\brokencrypto\BrokenCrypto1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\brokencrypto\CorrectedCrypto.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of broken or weak hash (MD5)}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\brokenhash\CorrectedHash.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\ecbmode\CorrectedEcbMode.java"
+"```
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB Mode}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\ecbmode\EcbMode1.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of predictable random generator}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\insecurerandom\CorrectedRandom.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Insecure Random}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\insecurerandom\InsecureRandom1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Denial of Service}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\pbeparameters\CorrectedPBE.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insufficient Salt Length}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\pbeparameters\PBEParameters1.java"
+"```
+{Vulnerable:Yes,Name of vulnerability:Weak Iteration Count}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\pbeparameters\PBEParameters2.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\smallkeysize\CorrectedKeySize.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Key Size}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\smallkeysize\SmallKeySize1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\staticiv\CorrectedIv.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded IV}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\truepositive\staticiv\StaticIv1.java"
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Hardcoded Cipher with Static Initialization Vector (IV)
+Yes,Incorrect Cipher Usage
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\falsepositive\brokencrypto\BrokenCrypto1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\falsepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\falsepositive\pbeparameters\PBEParameters1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Small RSA Key Size}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\falsepositive\smallkeysize\SmallKeySize1.java"
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Hardcoded Initialization Vector
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\falsepositive\staticiv\StaticIv1.java"
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Public Member Variable Allowing Direct Access
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\falsepositive\staticiv\StaticIv1.java"
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Weak Encryption Algorithm
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\brokencrypto\BrokenCrypto1.java"
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Broken Cryptography
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\brokencrypto\CorrectedCrypto.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of Broken Hash Algorithm (MD5)}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\brokenhash\CorrectedHash.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\pbeparameters\CorrectedPBE.java"
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Hardcoded Salt
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\pbeparameters\PBEParameters1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\smallkeysize\CorrectedKeySize.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Small RSA Key Size}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\smallkeysize\SmallKeySize1.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\staticiv\CorrectedIv.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Initialization Vector}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\staticiv\StaticIv1.java"
+"{Vulnerabl:Yes,Name of vulnerability}C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth2\truepositive\staticiv\StaticIv1.java"
+"```csv
+Vulnerable,Name of vulnerability
+No,None
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\falsepositive\brokencrypto\BrokenCrypto1.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of Broken or Risky Cryptographic Algorithm}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Cryptographic Key}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\falsepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\falsepositive\pbeparameters\PBEParameters1.java"
+"```csv
+{Vulnerable:Yes, Name of vulnerability:Use of Weak Key Size}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\falsepositive\smallkeysize\SmallKeySize1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded IV}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\falsepositive\staticiv\StaticIv1.java"
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Insecure Direct Object Reference
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\falsepositive\staticiv\StaticIv1.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of Weak Cryptographic Algorithms}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\brokencrypto\BrokenCrypto1.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\brokencrypto\CorrectedCrypto.java"
+"```
+{Vulnerable:Yes,Name of vulnerability:Use of Weak Hash Algorithm (MD5)}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\brokenhash\CorectedHash.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\pbeparameters\CorrectedPBE.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Weak Salt}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\pbeparameters\PBEParameters1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\smallkeysize\CorrectedKeySize.java"
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Weak RSA Key Size
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\smallkeysize\SmallKeySize1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\staticiv\CorrectedIv.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\staticiv\StaticIv1.java"
+"```
+{Vulnerabl:Yes,Name of vulnerability:Insecure Direct Object Reference}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\fieldsensitivity\advanced\fielddepth3\truepositive\staticiv\StaticIv1.java"

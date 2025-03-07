@@ -1,0 +1,194 @@
+"```plaintext
+{BrokenCrypto1.java, Cipher, 23, DES is insecure, None, Use AES/GCM/NoPadding instead of DES, No, 90}
+{BrokenCrypto1.java, KeyGenerator, 24, None, None, N/A, No, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\brokencrypto\BrokenCrypto1.java
+"```plaintext
+{BrokenHash1.java, MessageDigest.getInstance, 18, Use of MD5 or other weak algorithms, None, Use SHA-256 or stronger algorithms, Yes (since algo2=""SHA-256"" is executed), 90%}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\brokenhash\BrokenHash1.java
+"```csv
+{EcbMode1.java, Cipher.getInstance, 27, Using ECB mode which is insecure, None, Use AES/GCM/NoPadding or other authenticated encryption modes, Yes, 90}
+{EcbMode1.java, KeyGenerator.getInstance, 28, None, None, None, Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\ecbmode\EcbMode1.java
+"```csv
+InsecureRandom1.java, Cipher, 25, None, None, None, Yes, 95%
+InsecureRandom1.java, KeyGenerator, 26, None, None, None, Yes, 95%
+InsecureRandom1.java, Random, 28, Use of insecure Random for cryptographic purposes, None, Use SecureRandom instead, Yes, 95%
+InsecureRandom1.java, SecureRandom, 29, None, None, None, Yes, 95%
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\insecurerandom\InsecureRandom1.java
+"```csv
+{PBEParameters1.java, PBEParameterSpec, 29, The salt is not properly generated in one path, All paths use a securely generated salt, Use SecureRandom to generate the salt in all cases, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\pbeparameters\PBEParameters1.java
+"```csv
+{PBEParameters2.java, PBEParameterSpec, 28, ""High iteration count may cause performance issues; iteration count best practice not followed"", ""High iteration count may cause performance issues; iteration count best practice not followed"", ""Use a reasonable iteration count like 10000"", ""Yes"", 90}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\pbeparameters\PBEParameters2.java
+"```csv
+{SmallKeySize1.java, Cipher.getInstance, 24, None, None, None, Yes, 100}
+{SmallKeySize1.java, KeyPairGenerator.getInstance, 28, None, None, None, Yes, 100}
+{SmallKeySize1.java, keyGen.initialize, 29, Use of small key size (512) - line 26, None, Use key size of at least 2048 bits, Yes, 100}
+{SmallKeySize1.java, cipher.init, 32, None, None, None, Yes, 100}
+```
+
+In this analysis, the code initializes an RSA `KeyPairGenerator` with a key size conditional, but only the secure key size (`2048 bits`) is actually executed, as indicated by the conditions in the provided path."C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\smallkeysize\SmallKeySize1.java
+"```csv
+{StaticIv1.java, Cipher.getInstance, 26, , , , Yes, 100}
+{StaticIv1.java, KeyGenerator.getInstance, 27, , , , Yes, 100}
+{StaticIv1.java, SecureRandom, 28, , , , Yes, 100}
+{StaticIv1.java, IvParameterSpec, 36, Static IV may lead to vulnerabilities, , Use a Randomly Generated IV (ivBytes2), Yes, 95}
+{StaticIv1.java, Cipher.init, 38, Static IV may lead to vulnerabilities, , Use a Randomly Generated IV (ivBytes2), Yes, 95}
+```
+
+- **Identified JCA API Usages**: The code uses `Cipher`, `KeyGenerator`, `SecureRandom`, and `IvParameterSpec`.
+- **Misuses**: Possible misuse with a static IV (`ivBytes1`), but a dynamically generated IV (`ivBytes2`) is used, which is secure.
+- **Execution from Main**: Yes, all JCA API usages are executed in the main method.
+- **Confidence Level**: The analysis confidence is high (95-100%) due to straightforward code logic and clear variable usage."C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\falsepositive\staticiv\StaticIv1.java
+"```csv
+{BrokenCrypto1.java, Cipher.getInstance, 28, Usage of weak algorithm 'DES', Usage of weak algorithm 'DES', Use AES (with at least 128-bit key) instead, Yes, 100%}
+{BrokenCrypto1.java, KeyGenerator.getInstance, 29, Usage of weak algorithm 'DES', Usage of weak algorithm 'DES', Use AES (with at least 128-bit key) instead, Yes, 100%}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\brokencrypto\BrokenCrypto1.java
+"```plaintext
+CorrectedCrypto.java, Cipher, 22, None, None, None, Yes, 100
+CorrectedCrypto.java, KeyGenerator, 23, None, None, None, Yes, 100
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\brokencrypto\CorrectedCrypto.java
+"```csv
+{BrokenHash1.java, MessageDigest, 21, Use of MD5 which is a weak hash function, Use of MD5 which is a weak hash function, Use SHA-256 instead, Yes, 95}
+{BrokenHash1.java, MessageDigest, 14, Choice of hash algorithm based on variable potentially misused, Choice of hash algorithm based on variable potentially misused, Use SHA-256 explicitly, Yes, 90}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\brokenhash\BrokenHash1.java
+"```csv
+{CorrectedHash.java, MessageDigest.getInstance, 21, None, None, Secure as is (SHA-256), Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\brokenhash\CorrectedHash.java
+"```csv
+{CorrectedEcbMode.java, Cipher, 23, None, None, N/A, Yes, 95}
+{CorrectedEcbMode.java, KeyGenerator, 24, None, None, N/A, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\ecbmode\CorrectedEcbMode.java
+"```plaintext
+{EcbMode1.java, Cipher, 24, ECB mode usage is insecure, ECB mode usage is insecure, Use GCM mode (e.g., AES/GCM/NoPadding), Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\ecbmode\EcbMode1.java
+"```csv
+{CorrectedRandom.java, javax.crypto.Cipher, 23, None, None, N/A, Yes, 95}
+{CorrectedRandom.java, javax.crypto.KeyGenerator, 24, None, None, N/A, Yes, 95}
+{CorrectedRandom.java, java.security.SecureRandom, 26, None, None, N/A, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\insecurerandom\CorrectedRandom.java
+"```csv
+{InsecureRandom1.java, Cipher.getInstance, 23, None, None, N/A, Yes, 100}
+{InsecureRandom1.java, KeyGenerator.getInstance, 24, None, None, N/A, Yes, 100}
+{InsecureRandom1.java, Random.nextBytes, 29, Use of insecure Random for IV generation, Use of insecure Random for IV generation, Use SecureRandom instead, Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\insecurerandom\InsecureRandom1.java
+"```csv
+{CorrectedPBE.java, SecureRandom, 15-18, None, None, N/A, Yes, 100}
+{CorrectedPBE.java, PBEParameterSpec, 21, None, None, N/A, Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\pbeparameters\CorrectedPBE.java
+"```csv
+{PBEParameters1.java,PBEParameterSpec,21,Salt with insufficient length (should be at least 16 bytes), Salt with insufficient length (should be at least 16 bytes), Use a secure random generated salt of sufficient length, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\pbeparameters\PBEParameters1.java
+"```csv
+{PBEParameters2.java, PBEParameterSpec, 25, Weak iteration count, Weak iteration count, Use a higher iteration count, Yes, 90}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\pbeparameters\PBEParameters2.java
+"```csv
+{CorrectedKeySize.java, Cipher.getInstance, 20, None, None, n/a, Yes, 100}
+{CorrectedKeySize.java, KeyPairGenerator.getInstance, 24, None, None, n/a, Yes, 100}
+{CorrectedKeySize.java, keyGen.initialize, 25, None, None, n/a, Yes, 100}
+{CorrectedKeySize.java, cipher.init, 29, None, None, n/a, Yes, 100}
+```
+
+### Analysis Summary:
+1. **JCA API Usages**: 
+   - `Cipher.getInstance(""RSA/ECB/OAEPWithSHA-256AndMGF1Padding"")` on line 20.
+   - `KeyPairGenerator.getInstance(""RSA"")` on line 24.
+   - `keyGen.initialize(keySize1)` with key size 2048 on line 25.
+   - `cipher.init(Cipher.ENCRYPT_MODE,keyPair.getPublic())` on line 29.
+
+2. **Misuses Across All Code Paths**:
+   - No obvious misuses identified for these API usages regarding current standards.
+
+3. **Specific Execution Path**:
+   - The executed path uses a secure key size (2048 bits) for RSA, complying with standard security practices.
+
+4. **Execution from Main Method**:
+   - All noted JCA API usages are executed from the `main` method based on provided code.
+
+5. **Confidence Level**:
+   - High confidence (100%) in detecting actual issues due to straightforward code and appropriate key size usage.
+"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\smallkeysize\CorrectedKeySize.java
+"```csv
+{SmallKeySize1.java, Cipher, 21, Use of small RSA key size (1024), Use of small RSA key size (1024), Use a key size of at least 2048 bits for RSA, Yes, 95%}
+{SmallKeySize1.java, KeyPairGenerator, 26, Use of small RSA key size (1024), Use of small RSA key size (1024), Initialize with a minimum key size of 2048 bits for RSA, Yes, 95%}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\smallkeysize\SmallKeySize1.java
+"```csv
+CorrectedIv.java, Cipher.getInstance, 25, , , , Yes, 95
+CorrectedIv.java, KeyGenerator.getInstance, 26, , , , Yes, 95
+CorrectedIv.java, SecureRandom.nextBytes, 29, , , , Yes, 95
+CorrectedIv.java, Cipher.init, 32, , , , Yes, 95
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\staticiv\CorrectedIv.java
+"```csv
+{StaticIv1.java, javax.crypto.Cipher, 23, Using a static IV in encryption, Using a static IV in encryption, Use a securely generated random IV (e.g., ivBytes2), Yes, 95%}
+{StaticIv1.java, javax.crypto.KeyGenerator, 24, None, None, N/A, Yes, 95%}
+{StaticIv1.java, java.security.SecureRandom, 25, None, None, N/A, Yes, 95%}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\truepositive\staticiv\StaticIv1.java
+"```csv
+{BrokenCrypto1.java, javax.crypto.Cipher, 32, Use of a static or weak encryption algorithm (Blowfish, DES, RC2), None, AES/GCM/NoPadding, Yes, 95%}
+{BrokenCrypto1.java, javax.crypto.KeyGenerator, 33, Use of a static or weak encryption key generator (AES with default settings), None, Use AES with a specified key size (e.g., 256 bits), Yes, 95%}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\falsepositive\brokencrypto\BrokenCrypto1.java
+"```plaintext
+{BrokenHash1.java, MessageDigest, 23, MD2, Not Executed, Use SHA-256, Yes, 85}
+{BrokenHash1.java, MessageDigest, 25, MD5, Not Executed, Use SHA-256, Yes, 85}
+{BrokenHash1.java, MessageDigest, 27, SHA-1, Not Executed, Use SHA-256, Yes, 85}
+{BrokenHash1.java, MessageDigest, 29, SHA-256, None, None, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\falsepositive\brokenhash\BrokenHash1.java
+"```csv
+{PBEParameters1.java, PBEParameterSpec, 37, ""Weak Salt"", ""Weak Salt"", ""Use a randomly generated, sufficiently long salt"", Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\falsepositive\pbeparameters\PBEParameters1.java
+"```csv
+{SmallKeySize1.java, Cipher, 21, None, None, , Yes, 90}
+{SmallKeySize1.java, KeyPairGenerator, 28, Small key sizes for RSA: 128, 256, 512, 1024. Minimum recommended size is 2048 bits., None because key size 2048 is chosen in the executed path., Use key size of at least 2048 bits if less secure key sizes are chosen in other paths., Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\falsepositive\smallkeysize\SmallKeySize1.java
+"```
+{StaticIv1.java, Cipher.getInstance, 23, None, None, N/A, Yes, 95}
+{StaticIv1.java, KeyGenerator.getInstance, 24, None, None, N/A, Yes, 95}
+{StaticIv1.java, SecureRandom.nextBytes, 26, None, None, N/A, Yes, 95}
+{StaticIv1.java, Cipher.init, 37, Using static IV with algorithms that require random IVs, None, Use IvParameterSpec with a cryptographically secure random IV for GCM mode, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\falsepositive\staticiv\StaticIv1.java
+"```csv
+BrokenCrypto1.java, Cipher.getInstance, 30, Use of insecure algorithm (DES), Use of insecure algorithm (DES), Use AES with proper configuration, Yes, 95
+BrokenCrypto1.java, KeyGenerator.getInstance, 31, Use of insecure algorithm (DES), Use of insecure algorithm (DES), Use AES with proper configuration, Yes, 95
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\brokencrypto\BrokenCrypto1.java
+"```csv
+{CorrectedCrypto.java, Cipher.getInstance, 23, None, None, None, Yes, 100%}
+{CorrectedCrypto.java, KeyGenerator.getInstance, 25, None, None, None, Yes, 100%}
+{CorrectedCrypto.java, cipher.init, 26, None, None, None, Yes, 100%}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\brokencrypto\CorrectedCrypto.java
+"```csv
+{BrokenHash1.java, MessageDigest.getInstance, 26, ""Use of weak hash algorithm MD5 and MD2"", ""Use of weak hash algorithm SHA-1"", ""Use SHA-256 or stronger hash functions like SHA-3"", Yes, 90}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\brokenhash\BrokenHash1.java
+"```csv
+{CorrectedHash.java, MessageDigest, 21, , , N/A, Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\brokenhash\CorrectedHash.java
+"```csv
+{CorrectedPBE.java, SecureRandom, 15, None, None, N/A, Yes, 95}
+{CorrectedPBE.java, PBEParameterSpec, 19, None, None, N/A, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\pbeparameters\CorrectedPBE.java
+"```csv
+{PBEParameters1.java, PBEParameterSpec, 30, Use of fixed salt value, Yes, Use a random salt value generated securely, Yes, 95}
+{PBEParameters1.java, SecureRandom, 19, None, None, N/A, Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\pbeparameters\PBEParameters1.java
+"```csv
+{CorrectedKeySize.java, Cipher.getInstance, 24, None, None, N/A, Yes, 100}
+{CorrectedKeySize.java, KeyPairGenerator.getInstance, 29, None, None, N/A, Yes, 100}
+{CorrectedKeySize.java, keyGen.initialize, 30, None, None, N/A, Yes, 100}
+{CorrectedKeySize.java, cipher.init, 34, None, None, N/A, Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\smallkeysize\CorrectedKeySize.java
+"```csv
+SmallKeySize1.java, javax.crypto.Cipher, 24, None, None, None, Yes, 100%
+SmallKeySize1.java, javax.crypto.Cipher, 36, None, None, None, Yes, 100%
+SmallKeySize1.java, java.security.KeyPairGenerator, 30, Using small key size for RSA (1024 bits), Using small key size for RSA (1024 bits), Use key size of at least 2048 bits for RSA, Yes, 100%
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\smallkeysize\SmallKeySize1.java
+"```csv
+{CorrectedIv, javax.crypto.Cipher, 23, None, None, None, Yes, 95}
+{CorrectedIv, javax.crypto.KeyGenerator, 24, None, None, None, Yes, 95}
+{CorrectedIv, java.security.SecureRandom, 25, None, None, None, Yes, 95}
+{CorrectedIv, javax.crypto.spec.IvParameterSpec, 29, None, None, None, Yes, 95}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\staticiv\CorrectedIv.java
+"```csv
+{StaticIv1.java, Cipher, 22, Use of static IVs in AES/GCM mode, Static IV used (ivBytes5), Avoid using static IVs; use a random IV each time, Yes, 95}
+{StaticIv1.java, KeyGenerator, 23, , , , Yes, 100}
+{StaticIv1.java, SecureRandom, 24, , , , Yes, 100}
+```"C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\contextsensitivity\advanced\callsites5\truepositive\staticiv\StaticIv1.java

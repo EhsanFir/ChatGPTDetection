@@ -1,0 +1,107 @@
+,Detection,Correction,Comment
+"```csv
+{BrokenCrypto1.java, Cipher.getInstance, 23, Use of insecure algorithm (DES) which is not strong, Use of insecure algorithm (DES) which is not strong, AES/GCM/NoPadding, Yes, 95}
+{BrokenCrypto1.java, KeyGenerator.getInstance, 24, Use of insecure algorithm (DES) which is not strong, Use of insecure algorithm (DES) which is not strong, KeyGenerator.getInstance(""AES""), Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{BrokenCrypto2.java, Cipher.getInstance, 27, Use of insecure algorithm 'Blowfish', Use of insecure algorithm 'Blowfish', Use AES with a 256-bit key, Yes, 95%}
+{BrokenCrypto2.java, KeyGenerator.getInstance, 28, Use of insecure algorithm 'Blowfish', Use of insecure algorithm 'Blowfish', Use AES with a 256-bit key, Yes, 95%}
+```",TRUE,TRUE,
+"```csv
+{BrokenCrypto3.java, Cipher.getInstance, 23, ""Use of weak cipher (RC2)"", ""Use of weak cipher (RC2)"", ""Use a stronger cipher such as AES"", Yes, 95}
+{BrokenCrypto3.java, KeyGenerator.getInstance, 24, ""Use of weak key generator algorithm (RC2)"", ""Use of weak key generator algorithm (RC2)"", ""Use a stronger key generator algorithm such as AES"", Yes, 95}
+```",TRUE,TRUE,
+"```
+{BrokenCrypto4.java, Cipher, 21, ""Use of insecure algorithm RC4"", ""Use of insecure algorithm RC4"", ""AES/GCM/NoPadding"", Yes, 95}
+{BrokenCrypto4.java, KeyGenerator, 22, ""Use of insecure algorithm RC4"", ""Use of insecure algorithm RC4"", ""AES"", Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{BrokenCrypto5.java, Cipher.getInstance, 26, Weak cryptographic algorithm ""RC5"", Weak cryptographic algorithm ""RC5"", Use a stronger algorithm like ""AES"", Yes, 95}
+{BrokenCrypto5.java, KeyGenerator.getInstance, 27, Weak cryptographic algorithm ""RC5"", Weak cryptographic algorithm ""RC5"", Use a stronger algorithm like ""AES"", Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{CorrectedCrypto.java, Cipher, 24, None, None, N/A, Yes, 95}
+{CorrectedCrypto.java, KeyGenerator, 25, None, None, N/A, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{BrokenHash1.java, MessageDigest, 19, Use of MD5 which is a broken hash function, Use of MD5 which is a broken hash function, Use SHA-256 or SHA-3 instead, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{BrokenHash2.java, MessageDigest, 18, SHA-1 is cryptographically broken and unsuitable for further use, SHA-1 is used here, Use SHA-256 or SHA-512, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{BrokenHash3.java, MessageDigest, 19, Use of weak hash function (MD2), Use of weak hash function (MD2), Use a stronger hash function like SHA-256, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{BrokenHash4.java, MessageDigest, 16, Use of weak hash function (MD4), Use of weak hash function (MD4), Use a stronger hash function like SHA-256, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{CorrectedHash.java, MessageDigest.getInstance, 19, None, None, None, Yes, 100}
+```",TRUE,TRUE,
+"```csv
+{CorrectedEcbMode.java, javax.crypto.Cipher.getInstance, 22, None, None, N/A, Yes, 100}
+{CorrectedEcbMode.java, javax.crypto.KeyGenerator.getInstance, 23, None, None, N/A, Yes, 100}
+{CorrectedEcbMode.java, cipher.init, 24, None, None, N/A, Yes, 100}
+```",TRUE,TRUE,
+"```csv
+{EcbMode1.java, Cipher, 26, Use of ECB mode for encryption which is insecure, Use of ECB mode for encryption which is insecure, Use ""AES/CBC/PKCS5Padding"" or ""AES/GCM/NoPadding"" for secure encryption, Yes, 95}
+{EcbMode1.java, KeyGenerator, 27, None, None, N/A, Yes, 100}
+```",TRUE,TRUE,
+"```csv
+{CorrectedRandom.java, Cipher, 22, None, None, N/A, Yes, 100}
+{CorrectedRandom.java, KeyGenerator, 23, None, None, N/A, Yes, 100}
+{CorrectedRandom.java, SecureRandom, 26, None, None, N/A, Yes, 100}
+```",TRUE,TRUE,
+"```csv
+{InsecureRandom1.java, javax.crypto.Cipher, 25, Use of insecure random number generator for IV, Yes, Use SecureRandom instead of Random, Yes, 95}
+{InsecureRandom1.java, javax.crypto.KeyGenerator, 26, Proper usage noted, No, N/A, Yes, 100}
+{InsecureRandom1.java, javax.crypto.spec.IvParameterSpec, 30, Depends on method of IV generation, Yes, N/A, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{InsecureRandom2.java, Cipher, 24, , , , Yes, 100}
+{InsecureRandom2.java, KeyGenerator, 25, , , , Yes, 100}
+{InsecureRandom2.java, SecureRandom, 28, Initialization with static seed, Initialization with static seed, Use without calling setSeed or use a dynamic seed, Yes, 100}
+{InsecureRandom2.java, IvParameterSpec, 32, , , , Yes, 100}
+{InsecureRandom2.java, Cipher.init, 33, , , , Yes, 100}
+```
+",TRUE,TRUE,
+"```csv
+{CorrectedPBE.java, PBEParameterSpec, 20, None, None, N/A, Yes, 100}
+```",TRUE,TRUE,
+"```
+{PBEParameters1.java, PBEParameterSpec, 21, ""Use of a constant, low-entropy salt"", ""Use of a constant, low-entropy salt"", ""Use a securely generated random salt"", Yes, 95}
+```",TRUE,TRUE,
+"```csv
+PBEParameters2.java, PBEParameterSpec, 21, None, None, None, Yes, 100
+```",FALSE,,Low Iteration
+"```csv
+{CorrectedKeySize.java, Cipher.getInstance, 21, None, None, None, Yes, 100}
+{CorrectedKeySize.java, KeyPairGenerator.getInstance, 23, None, None, None, Yes, 100}
+{CorrectedKeySize.java, keyGen.initialize, 24, None, None, None, Yes, 100}
+{CorrectedKeySize.java, cipher.init, 27, None, None, None, Yes, 100}
+```",TRUE,TRUE,
+"```csv
+{SmallKeySize1.java, Cipher.getInstance, 27, None, None, N/A, Yes, 100%}
+{SmallKeySize1.java, KeyPairGenerator.getInstance, 29, Small key size, Small key size, Use keys of at least 2048 bits for RSA, Yes, 100%}
+{SmallKeySize1.java, keyGen.initialize, 30, Small key size, Small key size, Use keys of at least 2048 bits for RSA, Yes, 100%}
+```",TRUE,TRUE,
+"```csv
+{SmallKeySize2.java, Cipher.getInstance, 23, Use of static strings for algorithm names, Use of static strings for algorithm names, Use configuration to dynamically select algorithm, Yes, 95}
+{SmallKeySize2.java, KeyPairGenerator.getInstance, 25, Use of small RSA key size, Use of small RSA key size, Use larger key size (e.g., 2048 or 3072 bits), Yes, 95}
+{SmallKeySize2.java, keyGen.initialize, 26, Use of insecure key size, Use of insecure key size, Initialize with at least 2048-bit key size, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{CorrectedIv.java, Cipher, 20, None, None, N/A, Yes, 95}
+{CorrectedIv.java, KeyGenerator, 21, None, None, N/A, Yes, 95}
+{CorrectedIv.java, IvParameterSpec, 25, None, None, N/A, Yes, 95}
+```",TRUE,TRUE,
+"```csv
+{StaticIv1.java, Cipher.getInstance, 26, None, None, N/A, Yes, 100%}
+{StaticIv1.java, KeyGenerator.getInstance, 27, None, None, N/A, Yes, 100%}
+{StaticIv1.java, IvParameterSpec, 31, Hardcoded IV, Hardcoded IV, Use a securely generated random IV, Yes, 100%}
+```",TRUE,TRUE,
+"```csv
+{StaticIv2.java, Cipher, 23, Static IV usage, Static IV usage, Use SecureRandom to generate a random IV, Yes, 95}
+{StaticIv2.java, KeyGenerator, 24, None, None, None, Yes, 95}
+{StaticIv2.java, IvParameterSpec, 27, Static IV usage, Static IV usage, Use SecureRandom to generate a random IV, Yes, 95}
+```",TRUE,TRUE,

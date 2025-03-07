@@ -1,0 +1,72 @@
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Algorithm}
+{Vulnerabl:Yes,Name of vulnerability:Insecure Algorithm Use}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\brokencrypto\BrokenCrypto1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Broken Hash Algorithm}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Algorithm Configuration}
+{Vulnerable:Yes,Name of vulnerability:Use of ECB Mode}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\ecbmode\EcbMode1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Random Number Generation}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\insecurerandom\InsecureRandom1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insufficient Salt Size}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\pbeparameters\PBEParameters1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\pbeparameters\PBEParameters2.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Small Key Size}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\smallkeysize\SmallKeySize1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Initialization Vector}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\falsepositive\staticiv\StaticIv1.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Broken Cryptography}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\brokencrypto\BrokenCrypto1.java"
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Hardcoded Algorithm
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\brokencrypto\CorrectedCrypto.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of broken or risky cryptographic algorithm}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\brokenhash\BrokenHash1.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\brokenhash\CorrectedHash.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\ecbmode\CorrectedEcbMode.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB mode}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\ecbmode\EcbMode1.java"
+"```
+{Vulnerabl:Yes,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\insecurerandom\CorrectedRandom.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:InsecureRandomness}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\insecurerandom\InsecureRandom1.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\pbeparameters\CorrectedPBE.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Insufficient Salt Length}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\pbeparameters\PBEParameters1.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\pbeparameters\PBEParameters2.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\smallkeysize\CorrectedKeySize.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Weak RSA Key Size}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\smallkeysize\SmallKeySize1.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of weak key generation in cryptography}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\staticiv\CorrectedIv.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+```C:\Users\ef28\Downloads\CamBench-main\CamBench_Cap\src\main\java\org\cambench\cap\interprocedural2\truepositive\staticiv\StaticIv1.java"
