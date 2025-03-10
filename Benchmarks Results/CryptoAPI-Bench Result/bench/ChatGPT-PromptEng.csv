@@ -1,0 +1,850 @@
+"```csv
+{BrokenCryptoABICase1.java, Cipher.getInstance, 13, ""Use of insecure cipher (DES/ECB/PKCS5Padding)"", ""Use of insecure cipher (DES/ECB/PKCS5Padding)"", ""AES/GCM/NoPadding"", Yes, 95}
+{BrokenCryptoABICase1.java, KeyGenerator.getInstance, 11, ""Use of insecure key algorithm (DES)"", ""Use of insecure key algorithm (DES)"", ""AES"", Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase1.java"
+"```csv
+{BrokenCryptoABICase10.java, KeyGenerator.getInstance, 13, ""Use of insecure algorithm 'IDEA'"", ""Use of insecure algorithm 'IDEA'"", ""Use a secure algorithm like 'AES'"", Yes, 100%}
+{BrokenCryptoABICase10.java, Cipher.getInstance, 15, ""Use of insecure algorithm 'IDEA'"", ""Use of insecure algorithm 'IDEA'"", ""Use a secure algorithm like 'AES'"", Yes, 100%}
+```
+C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase10.java"
+"```
+{BrokenCryptoABICase11.java, KeyGenerator, 15, Using DES, Using DES, Use AES instead, Yes, 95%}
+{BrokenCryptoABICase11.java, Cipher, 17, Using DES/ECB/PKCS5Padding, Using DES/ECB/PKCS5Padding, Use AES/GCM/NoPadding instead, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase11.java"
+"```csv
+{BrokenCryptoABICase12.java, KeyGenerator,getInstance,22,Use of static Crypto algorithms,Based on line 34,Consider using AES with key size of at least 128 bits,Yes,90}
+{BrokenCryptoABICase12.java, Cipher,getInstance,24,Use of static Crypto algorithms,Based on line 34,Consider using AES with GCM mode for better security,Yes,90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase12.java"
+"```csv
+{BrokenCryptoABICase13.java, KeyGenerator.getInstance, 16, Use of weak or deprecated algorithm, Use of weak or deprecated algorithm, Use stronger algorithm like AES, Yes, 95}
+{BrokenCryptoABICase13.java, Cipher.getInstance, 18, Use of weak or deprecated algorithm, Use of weak or deprecated algorithm, Use stronger algorithm like AES, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase13.java"
+"```csv
+{BrokenCryptoABICase14.java, javax.crypto.Cipher, 16, Weak encryption algorithm, Weak encryption algorithm, Use a strong encryption algorithm like AES, Yes, 95}
+{BrokenCryptoABICase14.java, javax.crypto.KeyGenerator, 14, Weak encryption algorithm, Weak encryption algorithm, Use a strong encryption algorithm like AES, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase14.java"
+"Here's the analysis of the provided Java code in the required CSV format:
+
+```
+File Name, JCA API or Classe, line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+BrokenCryptoABICase15.java, KeyGenerator, 13, Use of a weak algorithm (IDEA), Use of a weak algorithm (IDEA), Use a stronger algorithm like AES, Yes, 95
+BrokenCryptoABICase15.java, Cipher, 15, Use of a weak algorithm (IDEA), Use of a weak algorithm (IDEA), Use a stronger algorithm like AES, Yes, 95
+```
+
+### Explanation:
+1. **JCA API Usages**: The `KeyGenerator` and `Cipher` classes are used in lines 13 and 15, respectively, with the algorithm IDEA.
+   
+2. **Misuses across All Code Paths**: The code utilizes the weak IDEA algorithm, which is not recommended for secure applications.
+
+3. **Misuses in Executed Path**: The main method calls `method2` with IDEA, which is executed and presents a security risk.
+
+4. **Secure Alternative**: Replace the IDEA algorithm with a stronger, widely recommended one like AES.
+
+5. **Executed from Main Method**: Yes, the code starting from `main` executes the misuse in all scenarios with the given initial conditions.
+
+6. **Confidence Level**: The confidence level is high at 95% due to straightforward code and clear misuse detection.C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase15.java"
+"```csv
+{BrokenCryptoABICase2.java, Cipher, 13, Use of static/transformation strings, Use of static/transformation strings, Use a strong cipher like AES and appropriate transformation, True, 95}
+{BrokenCryptoABICase2.java, KeyGenerator, 10, Key size not specified for algorithms with variable key sizes, Key size not specified for algorithms with variable key sizes, Specify a key size of at least 256 bits for AES, True, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase2.java"
+"```csv
+{BrokenCryptoABICase3.java, KeyGenerator.getInstance, 12, Use of static string 'RC4' might be insecure, Use of static string 'RC4' is insecure, A modern cipher like 'AES' should be used, Yes, 95}
+{BrokenCryptoABICase3.java, Cipher.getInstance, 14, Use of static string 'RC4' might be insecure, Use of static string 'RC4' is insecure, A modern cipher like 'AES/CBC/PKCS5Padding' should be used, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase3.java"
+"```csv
+{BrokenCryptoABICase4.java, Cipher.getInstance, 15, Use of weak algorithm (RC2), Use of weak algorithm (RC2), AES/GCM/NoPadding, Yes, 90}
+{BrokenCryptoABICase4.java, KeyGenerator.getInstance, 12, Use of weak algorithm (RC2), Use of weak algorithm (RC2), AES, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase4.java"
+"```plaintext
+{BrokenCryptoABICase5.java, KeyGenerator, 19, Using weak algorithm ""DES"", Using weak algorithm ""DES"", AES/GCM/NoPadding, Yes, 90}
+{BrokenCryptoABICase5.java, Cipher, 21, Using weak algorithm ""DES/ECB/PKCS5Padding"" and ECB mode, Using weak algorithm ""DES/ECB/PKCS5Padding"" and ECB mode, AES/GCM/NoPadding, Yes, 90}
+{BrokenCryptoABICase5.java, Cipher.init, 22, -, -, -, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase5.java"
+"```csv
+{BrokenCryptoABICase6.java, KeyGenerator.getInstance, 13, Usage of weak algorithm (Blowfish), Usage of weak algorithm (Blowfish), AES with a key size of at least 128 bits, Yes, 95}
+{BrokenCryptoABICase6.java, Cipher.getInstance, 15, Usage of weak algorithm (Blowfish), Usage of weak algorithm (Blowfish), AES/GCM/NoPadding, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase6.java"
+"```plaintext
+{BrokenCryptoABICase7.java, javax.crypto.KeyGenerator, 14, Insecure algorithm (RC4), Insecure algorithm (RC4), Use AES as a secure alternative, Yes, 95%}
+{BrokenCryptoABICase7.java, javax.crypto.Cipher, 16, Insecure algorithm (RC4), Insecure algorithm (RC4), Use AES/CBC/PKCS5Padding or AES/GCM/NoPadding as a secure alternative, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase7.java"
+"```
+{BrokenCryptoABICase8.java, KeyGenerator.getInstance, 13, Weak encryption algorithm (RC2), Weak encryption algorithm (RC2), Consider using a stronger algorithm like AES, Yes, 95%}
+{BrokenCryptoABICase8.java, Cipher.getInstance, 15, Weak encryption algorithm (RC2), Weak encryption algorithm (RC2), Consider using a stronger algorithm like AES, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase8.java"
+"```plaintext
+{BrokenCryptoABICase9.java, KeyGenerator.getInstance,11, Usage of potentially insecure algorithm ""IDEA"", Usage of potentially insecure algorithm ""IDEA"", Use AES instead, Yes, 95}
+{BrokenCryptoABICase9.java, Cipher.getInstance,13, Usage of potentially insecure algorithm ""IDEA"", Usage of potentially insecure algorithm ""IDEA"", Use AES instead, Yes, 95}
+{BrokenCryptoABICase9.java, Cipher.init,14, No explicit misuse, No explicit misuse, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABICase9.java"
+"```csv
+{BrokenCryptoABMC1.java, KeyGenerator.getInstance, 11, None, None, None, No, 95%}
+{BrokenCryptoABMC1.java, Cipher.getInstance, 13, Use of insecure cryptographic algorithms (e.g., ""DES"", ""ECB"") if chosen, Potential misuse based on input, Use strong algorithm like ""AES/GCM/NoPadding"", No, 95%}
+{BrokenCryptoABMC1.java, cipher.init, 14, None, None, None, No, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMC1.java"
+"```csv
+{BrokenCryptoABMC2.java, KeyGenerator.getInstance, 13, use of variable input for algorithm, potential algorithm misuse, Use static secure algorithm such as ""AES"", No, 80}
+{BrokenCryptoABMC2.java, Cipher.getInstance, 15, use of variable input for algorithm, potential algorithm misuse, Use static secure algorithm and padding scheme like ""AES/GCM/NoPadding"", No, 80}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMC2.java"
+"```csv
+{BrokenCryptoABMC3.java, KeyGenerator.getInstance, 12, , , Use explicit strong algorithm (e.g., AES), No, 80}
+{BrokenCryptoABMC3.java, Cipher.getInstance, 14, Potentially weak algorithm choice, Potentially weak algorithm choice, Use explicit strong algorithm (e.g., AES), No, 80}
+{BrokenCryptoABMC3.java, cipher.init, 15, , , , No, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMC3.java"
+"```csv
+{BrokenCryptoABMC4.java, KeyGenerator.getInstance, 12, Use of variable `crypto` for algorithm choice, Dynamic algorithm choice without validation, Use a constant algorithm name e.g., ""AES"", Not directly executed from main, 80%}
+{BrokenCryptoABMC4.java, Cipher.getInstance, 14, Use of variable `crypto` for algorithm choice, Dynamic algorithm choice without validation, Use a constant algorithm name e.g., ""AES/CBC/PKCS5Padding"", Not directly executed from main, 80%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMC4.java"
+"```csv
+{BrokenCryptoABMC5.java, KeyGenerator.getInstance, 11, Use of user-controlled crypto algorithm, Use of user-controlled crypto algorithm, Use a constant, trusted algorithm, No, 90}
+{BrokenCryptoABMC5.java, Cipher.getInstance, 13, Use of user-controlled crypto algorithm, Use of user-controlled crypto algorithm, Use a constant, trusted algorithm, No, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMC5.java"
+"```csv
+{BrokenCryptoABMCCase1.java, javax.crypto.Cipher, 9, Use of outdated and insecure cipher algorithm (DES/ECB/PKCS5Padding), Use of outdated and insecure cipher algorithm (DES/ECB/PKCS5Padding), AES/CBC/PKCS5Padding, Yes, 95}
+{BrokenCryptoABMCCase1.java, java.security.Key, 10, Use of an insecure key size for DES, Use of an insecure key size for DES, Use AES with a 128-bit or larger key size, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMCCase1.java"
+"```csv
+{BrokenCryptoABMCCase2.java, javax.crypto.Cipher (potential, based on Java class conventions), N/A, ""Use of algorithms that are considered weak or deprecated"", ""Blowfish is a deprecated and weak algorithm"", ""AES with 256-bit key"", Yes, 80%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMCCase2.java"
+"```csv
+{org.cryptoapi.bench.brokencrypto.BrokenCryptoABMCCase3, N/A, N/A, N/A, N/A, N/A, Yes, N/A}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMCCase3.java"
+"```csv
+{BrokenCryptoABMCCase4.java, None, N/A, None, None, N/A, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMCCase4.java"
+"```csv
+{BrokenCryptoABMCCase5.java, None, N/A, N/A, N/A, N/A, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABMCCase5.java"
+"```plaintext
+{BrokenCryptoABPSCase1.java, Cipher.getInstance(""DES/ECB/PKCS5Padding""), 15, Cipher instance with insecure DES/ECB/PKCS5Padding, None, AES with a secure mode like GCM, Yes, 90}
+{BrokenCryptoABPSCase1.java, Cipher.getInstance(""AES/CBC/PKCS5Padding""), 17, AES mode can be insecure without IV management, None, AES/GCM/NoPadding, Yes, 80}
+{BrokenCryptoABPSCase1.java, KeyGenerator.getInstance(""AES""), 10, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABPSCase1.java"
+"```plaintext
+{BrokenCryptoABPSCase2.java, Cipher.getInstance, 11, ""Using Blowfish which is less secure"", ""None"", ""Use AES/GCM/NoPadding"", Yes, 95}
+{BrokenCryptoABPSCase2.java, Cipher.getInstance, 13, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABPSCase2.java"
+"```csv
+{BrokenCryptoABPSCase3.java, KeyGenerator.getInstance, 12, None, None, None, Yes, 100}
+{BrokenCryptoABPSCase3.java, Cipher.getInstance(""RC4""), 14, Use of insecure algorithm (RC4), Use of insecure algorithm (RC4), Use ""AES/CBC/PKCS5Padding"" or similar secure alternative, Yes (if choice <= 1), 100}
+{BrokenCryptoABPSCase3.java, Cipher.getInstance(""AES/CBC/PKCS5Padding""), 16, Padding oracle vulnerability if not properly handled, None, Use AES/GCM/NoPadding for better security, Yes (if choice > 1), 100}
+{BrokenCryptoABPSCase3.java, cipher.init(Cipher.ENCRYPT_MODE, key), 18, None, None, Ensure IV is not hardcoded and is securely generated for CBC mode, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABPSCase3.java"
+"```csv
+{BrokenCryptoABPSCase4.java, KeyGenerator.getInstance, 12, None, None, N/A, Yes, 100%}
+{BrokenCryptoABPSCase4.java, Cipher.getInstance, 14, Use of insecure algorithm (RC2), N/A, Use AES/GCM/NoPadding or an equivalent secure algorithm, No, 90%}
+{BrokenCryptoABPSCase4.java, Cipher.getInstance, 16, None, None, N/A, Yes, 100%}
+{BrokenCryptoABPSCase4.java, cipher.init, 18, None, None, N/A, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABPSCase4.java"
+"```plaintext
+{BrokenCryptoABPSCase5.java, Cipher.getInstance(""IDEA""), 13, Use of insecure cipher ""IDEA"", Use of insecure cipher ""IDEA"", Cipher.getInstance(""AES/CBC/PKCS5Padding""), No, 90}
+{BrokenCryptoABPSCase5.java, Cipher.getInstance(""AES/CBC/PKCS5Padding""), 15, None, None, , Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABPSCase5.java"
+"```plaintext
+{BrokenCryptoABSCase1.java, Cipher, 17, Use of weak algorithm DES, Use of weak algorithm DES, AES/GCM/NoPadding, No, 90}
+{BrokenCryptoABSCase1.java, KeyGenerator, 19, Use of weak algorithm DES, Use of weak algorithm DES, Use AES instead of DES, No, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABSCase1.java"
+"```csv
+{BrokenCryptoABSCase2.java, KeyGenerator.getInstance, 25, ""Use of insecure algorithm"", ""Use of insecure algorithm 'Blowfish'"", ""Use a secure algorithm like 'AES'"", Yes, 90}
+{BrokenCryptoABSCase2.java, Cipher.getInstance, 27, ""Use of insecure algorithm"", ""Use of insecure algorithm 'Blowfish'"", ""Use a secure algorithm like 'AES'"", Yes, 90}
+{BrokenCryptoABSCase2.java, Cipher.init, 28, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABSCase2.java"
+"```csv
+{BrokenCryptoABSCase3.java, Cipher, 18, Use of insecure algorithm RC4, Use of insecure algorithm RC4, Consider using AES/GCM/NoPadding, Yes, 95}
+{BrokenCryptoABSCase3.java, KeyGenerator, 17, Use of insecure algorithm RC4, Use of insecure algorithm RC4, Consider using AES, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABSCase3.java"
+"```
+{BrokenCryptoABSCase4.java, Cipher, 22, Use of insecure algorithm (RC2) without parameters, Use of insecure algorithm (RC2) without parameters, Use AES with appropriate key size and parameters, Yes, 90}
+{BrokenCryptoABSCase4.java, KeyGenerator, 19, Use of insecure algorithm (RC2) without parameters, Use of insecure algorithm (RC2) without parameters, Use KeyGenerator with AES, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABSCase4.java"
+"```csv
+{BrokenCryptoABSCase5.java, Cipher, 17, Uses a non-standard encryption algorithm (IDEA), Uses a non-standard encryption algorithm (IDEA), Use a standard and strong algorithm like AES, Yes, 95}
+{BrokenCryptoABSCase5.java, KeyGenerator, 14, Uses a non-standard encryption algorithm (IDEA), Uses a non-standard encryption algorithm (IDEA), Use a standard and strong algorithm like AES, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoABSCase5.java"
+"```csv
+{BrokenCryptoBBCase1.java, KeyGenerator.getInstance, 14, Use of weak algorithm (DES), Use of weak algorithm (DES), Use AES with 256-bit keys (KeyGenerator.getInstance(""AES"")), Yes, 95}
+{BrokenCryptoBBCase1.java, Cipher.getInstance, 16, Use of weak algorithm/mode (DES/ECB), Use of weak algorithm/mode (DES/ECB), Use AES with CBC mode or GCM mode (Cipher.getInstance(""AES/CBC/PKCS5Padding"")), Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoBBCase1.java"
+"```csv
+{BrokenCryptoBBCase2.java, KeyGenerator, 9, Use of weak cipher (Blowfish), Use of weak cipher (Blowfish), Use AES/GCM/NoPadding, Yes, 95}
+{BrokenCryptoBBCase2.java, Cipher, 11, Use of weak cipher (Blowfish), Use of weak cipher (Blowfish), Use AES/GCM/NoPadding, Yes, 95}
+```
+C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoBBCase2.java"
+"```csv
+{BrokenCryptoBBCase3.java, KeyGenerator.getInstance, 12, ""Use of a weak or broken cryptographic algorithm (RC4)"", ""Use of a weak or broken cryptographic algorithm (RC4)"", ""Use a stronger algorithm such as AES"", Yes, 90}
+{BrokenCryptoBBCase3.java, Cipher.getInstance, 14, ""Use of a weak or broken cryptographic algorithm (RC4)"", ""Use of a weak or broken cryptographic algorithm (RC4)"", ""Use a stronger algorithm such as AES"", Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoBBCase3.java"
+"```csv
+{BrokenCryptoBBCase4.java, KeyGenerator, 11, Weak algorithm (RC2), Weak algorithm (RC2), Use AES with a strong key size (e.g., AES with a 256-bit key), Yes, 95}
+{BrokenCryptoBBCase4.java, Cipher, 13, Weak algorithm (RC2), Weak algorithm (RC2), Use AES with a strong key size (e.g., AES with a 256-bit key), Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoBBCase4.java"
+"```plaintext
+{BrokenCryptoBBCase5.java, KeyGenerator, 12, Use of insecure algorithm 'IDEA', Use of insecure algorithm 'IDEA', Use a secure algorithm like 'AES', Yes, 95%}
+{BrokenCryptoBBCase5.java, Cipher, 14, Use of insecure algorithm 'IDEA', Use of insecure algorithm 'IDEA', Use a secure algorithm like 'AES', Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoBBCase5.java"
+"```csv
+{BrokenCryptoCorrected.java, KeyGenerator, 10, None, None, N/A, Yes, 100%}
+{BrokenCryptoCorrected.java, SecretKey, 11, None, None, N/A, Yes, 100%}
+{BrokenCryptoCorrected.java, Cipher, 12, None, None, N/A, Yes, 100%}
+{BrokenCryptoCorrected.java, Cipher, 13, None, None, N/A, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokencrypto\BrokenCryptoCorrected.java"
+"```plaintext
+{BrokenHashABICase1.java, MessageDigest.getInstance, 11, Use of weak hash algorithm (SHA1), Use of weak hash algorithm (SHA1), SHA-256, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase1.java"
+"```csv
+{BrokenHashABICase10.java, MessageDigest.getInstance, 13, Use of broken hash function (MD5), Use of broken hash function (MD5), SHA-256 or SHA-3, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase10.java"
+"```csv
+{BrokenHashABICase11.java, MessageDigest, 14, Use of insecure hash algorithm (MD4) , Use of insecure hash algorithm (MD4), Use SHA-256 or SHA-3, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase11.java"
+"```csv
+{BrokenHashABICase12.java, MessageDigest.getInstance, 15, Usage of weak hash algorithm ""MD2"", Usage of weak hash algorithm ""MD2"", Use a stronger algorithm like ""SHA-256"", Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase12.java"
+"```csv
+{BrokenHashABICase2.java, MessageDigest.getInstance, 12, Use of a weak hash function (MD5), Use of a weak hash function (MD5), SHA-256, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase2.java"
+"```csv
+{BrokenHashABICase3.java, MessageDigest, 10, Use of weak hash algorithm (MD4), Use of weak hash algorithm (MD4), Use a stronger algorithm (e.g., SHA-256), Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase3.java"
+"```csv
+{BrokenHashABICase4.java, MessageDigest, 9, Usage of a weak hash algorithm (MD2) which is vulnerable to attacks., Usage of a weak hash algorithm (MD2) which is vulnerable to attacks., Use a stronger hash algorithm like SHA-256, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase4.java"
+"```csv
+{BrokenHashABICase5.java, MessageDigest, 18, Using SHA-1 for hashing, Using SHA-1 for hashing, Use SHA-256 or SHA-3 instead, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase5.java"
+"```csv
+{BrokenHashABICase6.java, MessageDigest, 17, Use of weak hash function MD5, Use of weak hash function MD5, SHA-256 or SHA-3, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase6.java"
+"```csv
+{BrokenHashABICase7.java, MessageDigest, 16, Use of broken hash algorithm (MD4), Use of broken hash algorithm (MD4), SHA-256 or other secure hash algorithm, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase7.java"
+"```csv
+{BrokenHashABICase8.java, MessageDigest, 16, Use of weak hash algorithm (MD2), Use of weak hash algorithm (MD2), SHA-256 or a stronger secure hash algorithm, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase8.java"
+"```csv
+{BrokenHashABICase9.java, MessageDigest.getInstance, 13, Use of SHA-1 for hashing, Use of SHA-1 for hashing, Use SHA-256 or higher, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABICase9.java"
+"```csv
+{BrokenHashABMC1.java, MessageDigest, 7, Use of weak hash algorithm (e.g., MD5, SHA-1), Potentially using weak hash if 'crypto' is MD5/SHA-1, SHA-256 or higher should be used, Not enough information?,  80}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMC1.java"
+"```plaintext
+{BrokenHashABMC2.java, MessageDigest, 8, Use of weak hash function, Use of weak hash function if insecure algorithm is chosen, Use a strong hash function like SHA-256, Depends on the input argument ""crypto"", 80}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMC2.java"
+"```csv
+{BrokenHashABMC3.java, MessageDigest, 7, Use of a weak or broken hash function (if 'MD5' is passed), Same misuse applies when 'MD5' is executed, Use 'SHA-256' or a stronger hash function, Yes, 90%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMC3.java"
+"```csv
+{BrokenHashABMC4.java, MessageDigest, 7, Usage of broken or weak hash function due to dynamic algorithm specification, Possible use of weak or broken hash algorithms like MD5, Use of secure algorithms like SHA-256, No (since choice depends on external variable), 80}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMC4.java"
+"```csv
+BrokenHashABMCCase1.java, N/A, N/A, N/A, N/A, N/A, Yes, 100%
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMCCase1.java"
+"```csv
+{BrokenHashABMCCase2.java, MessageDigest, 10, Use of weak hash algorithm (MD5), Use of weak hash algorithm (MD5), Use SHA-256 or stronger algorithm, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMCCase2.java"
+"```csv
+{BrokenHashABMCCase3.java, main, 7, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMCCase3.java"
+"```csv
+{BrokenHashABMCCase4.java, ""No JCA API Usage Directly in this File"", N/A, N/A, N/A, N/A, N/A, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABMCCase4.java"
+"```csv
+{BrokenHashABPSCase1, MessageDigest.getInstance(""SHA1""), 10, Use of SHA1 which is weak, Not executed based on condition, Use SHA-256 or higher, Yes, 95}
+{BrokenHashABPSCase1, MessageDigest.getInstance(""SHA-256""), 12, None, Use of SHA-256 which is considered secure, Executed, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABPSCase1.java"
+"```
+{BrokenHashABPSCase2.java, MessageDigest.getInstance(""MD5""), 11, Use of weak hash function, Not executed, MessageDigest.getInstance(""SHA-256""), Yes, 100%}
+{BrokenHashABPSCase2.java, MessageDigest.getInstance(""SHA-256""), 13, None, None, None, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABPSCase2.java"
+"```csv
+{BrokenHashABPSCase3.java, MessageDigest.getInstance, 9, Uses insecure algorithm MD4, No misuses since algorithm changes to SHA-256, Use strong algorithms only (e.g. SHA-256), Yes, 90}
+{BrokenHashABPSCase3.java, MessageDigest.getInstance, 11, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABPSCase3.java"
+"```csv
+{BrokenHashABPSCase4.java, MessageDigest.getInstance, 10, MD2 is insecure, None, Use strong algorithms like SHA-256 or SHA-3 regardless of conditions, Yes, 90}
+{BrokenHashABPSCase4.java, MessageDigest.getInstance, 12, None, None, Safe as it uses SHA-256, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABPSCase4.java"
+"```csv
+{BrokenHashABSCase1.java, MessageDigest, 17, Weak hash function (SHA1) is used, Weak hash function (SHA1) is used, Use a stronger hash function like SHA-256, No, 90%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABSCase1.java"
+"```plaintext
+{BrokenHashABSCase2.java, MessageDigest, 18, Use of MD5 which is a weak hash function, Use of MD5 which is a weak hash function, Use SHA-256 or SHA-3 instead, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABSCase2.java"
+"```csv
+{BrokenHashABSCase3.java, MessageDigest, 21, MD4 is considered a broken hash algorithm, MD4 is used due to empty 'passedAlgo', Use SHA-256 or SHA-3 instead, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABSCase3.java"
+"```csv
+{BrokenHashABSCase4.java, MessageDigest, 18, Use of weak hash algorithm (MD2), Use of weak hash algorithm (MD2), Use a stronger hash algorithm like SHA-256 or SHA-3, No, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashABSCase4.java"
+"```csv
+{BrokenHashBBCase1.java, MessageDigest, 9, Use of weak hash function (SHA1), Use of weak hash function (SHA1), Use a stronger hash function such as SHA-256 or SHA-3, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashBBCase1.java"
+"```csv
+{BrokenHashBBCase2.java, MessageDigest, 10, Use of MD5 which is insecure due to vulnerabilities, Use of MD5 which is insecure due to vulnerabilities, SHA-256 or SHA-3, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashBBCase2.java"
+"```csv
+{BrokenHashBBCase3.java, MessageDigest, 9, Use of MD4 which is considered broken, Use of MD4 which is considered broken, Use SHA-256 or a similar secure hashing algorithm, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashBBCase3.java"
+"```csv
+{BrokenHashBBCase4.java, MessageDigest, 9, Insecure hash function (MD2), Insecure hash function (MD2), Use SHA-256 or SHA-3, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashBBCase4.java"
+"```
+{BrokenHashCorrected.java, MessageDigest, 8, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\brokenhash\BrokenHashCorrected.java"
+"```csv
+{DummyCertValidationCase1.java, X509TrustManager, 9, Trust any client and server without proper validation, Trust any server without proper validation, Implement proper certificate validation logic, N/A, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\dummycertvalidation\DummyCertValidationCase1.java"
+"```csv
+{DummyCertValidationCase2.java, X509TrustManager.checkClientTrusted, 10, ""Trusting all client certificates without validation"", ""Trusting all client certificates without validation"", ""Validate the certificate chain against a known/trusted CA"", No, 90}
+
+{DummyCertValidationCase2.java, X509TrustManager.checkServerTrusted, 14, ""Trusting all server certificates without validation"", ""Trusting all server certificates without validation"", ""Validate the certificate chain against a known/trusted CA"", No, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\dummycertvalidation\DummyCertValidationCase2.java"
+"```csv
+{DummyCertValidationCase3.java, X509TrustManager, 4-16, Allows all certificates by not implementing checks, Allows all certificates by not implementing checks, Implement proper checks or use default trust manager, No, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\dummycertvalidation\DummyCertValidationCase3.java"
+"```csv
+{DummyHostNameVerifierCase1.java, javax.net.ssl.HostnameVerifier, 3, Always returns true, Always returns true, Implement a proper hostname verification, No, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\dummyhostnameverifier\DummyHostNameVerifierCase1.java"
+"```csv
+{DummyHostNameVerifierCorrected.java, HostnameVerifier, 8, Custom validation logic should not bypass default verification, Custom hostname bypass is executed for specific IP address, Use full hostname verification or white-list dynamic checking with network policies, Not executed directly from main method, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\dummyhostnameverifier\DummyHostNameVerifierCorrected.java"
+"```csv
+{EcbInSymmCryptoABICase1.java, Cipher.getInstance, 15, ""Use of insecure ECB mode"", ""Use of insecure ECB mode"", ""Use AES/GCM/NoPadding or AES/CBC/PKCS5Padding"", Yes, 95}
+{EcbInSymmCryptoABICase1.java, KeyGenerator.getInstance, 12, None, None, None, Yes, 100}
+{EcbInSymmCryptoABICase1.java, cipher.init, 16, Depends on cipher instance misuse, ""Use of insecure ECB mode"", ""Use AES/GCM/NoPadding or AES/CBC/PKCS5Padding"", Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoABICase1.java"
+"```plaintext
+{EcbInSymmCryptoABICase2.java, Cipher, 14, Use of ECB mode for encryption, Use of ECB mode for encryption, AES/GCM/NoPadding, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoABICase2.java"
+"```plaintext
+{EcbInSymmCryptoABICase3.java, Cipher.getInstance, 17, Use of ECB mode, Use of ECB mode, AES/GCM/NoPadding, Yes, 95}
+{EcbInSymmCryptoABICase3.java, KeyGenerator.getInstance, 15, None, None, N/A, Yes, 100}
+{EcbInSymmCryptoABICase3.java, Cipher.init, 18, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoABICase3.java"
+"```csv
+{EcbInSymmCryptoABMC1.java, Cipher,8, Use of ECB mode for encryption, Use of ECB mode for encryption, Use a more secure mode like GCM (Cipher.getInstance(""AES/GCM/NoPadding"")), No, 90%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoABMC1.java"
+"```csv
+{EcbInSymmCryptoABMCCase1.java, javax.crypto.Cipher.getInstance, 10, Use of ECB mode for AES, Use of ECB mode for AES, Use AES with GCM or CBC mode with a secure padding scheme, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoABMCCase1.java"
+"```plaintext
+{EcbInSymmCryptoABPSCase1.java, javax.crypto.KeyGenerator, 11, None, None, None, Yes, 100%}
+{EcbInSymmCryptoABPSCase1.java, javax.crypto.SecretKey, 12, None, None, None, Yes, 100%}
+{EcbInSymmCryptoABPSCase1.java, javax.crypto.Cipher, 13, Use of ECB mode for encryption, Cipher initialized in ECB mode (line 13) only if choice <= 1, Use AES/CBC/PKCS5Padding or AES/GCM/NoPadding, Yes, 100%}
+{EcbInSymmCryptoABPSCase1.java, javax.crypto.Cipher, 15, None, None, None, Yes, 100%}
+{EcbInSymmCryptoABPSCase1.java, javax.crypto.Cipher, 16, None, None, None, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoABPSCase1.java"
+"```csv
+{EcbInSymmCryptoABSCase1.java, Cipher, 14, Use of ECB mode for encryption, Use of ECB mode for encryption, ""AES/GCM/NoPadding"", Yes, 95}
+{EcbInSymmCryptoABSCase1.java, KeyGenerator, 23, Proper KeyGenerator usage, None, N/A, Yes, 100}
+{EcbInSymmCryptoABSCase1.java, Cipher, 24, Proper Cipher initialization, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoABSCase1.java"
+"```csv
+{EcbInSymmCryptoBBCase1.java, Cipher, 14, Use of ECB mode for encryption, Use of ECB mode for encryption, ""Cipher.getInstance(\""AES/CBC/PKCS5Padding\"")"", Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoBBCase1.java"
+"```csv
+{EcbInSymmCryptoCorrected.java, Cipher, 10, None, None, Not Applicable, Yes, 95}
+{EcbInSymmCryptoCorrected.java, KeyGenerator, 8, None, None, Not Applicable, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto\EcbInSymmCryptoCorrected.java"
+"```csv
+{EcbInSymmCryptoABICase2.java, javax.crypto.Cipher, 16, ""Use of ECB mode which is insecure"", ""Use of ECB mode which is insecure"", ""AES/CBC/PKCS5Padding or AES/GCM/NoPadding"", Yes, 95}
+{EcbInSymmCryptoABICase2.java, javax.crypto.KeyGenerator, 14, None, None, None, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto - Copy\EcbInSymmCryptoABICase2.java"
+"```csv
+{EcbInSymmCryptoABPSCase1.java, Cipher, 12, Use of ECB mode for encryption, Use of ECB mode for encryption, AES/CBC/PKCS5Padding, Yes, 95}
+{EcbInSymmCryptoABPSCase1.java, Cipher, 14, None, None, N/A, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto - Copy\EcbInSymmCryptoABPSCase1.java"
+"```csv
+{EcbInSymmCryptoABSCase1.java, Cipher.getInstance, 15, ""Use of AES in ECB mode"", ""Use of AES in ECB mode"", ""Use a secure mode like GCM"", Yes, 100}
+{EcbInSymmCryptoABSCase1.java, KeyGenerator.getInstance, 22, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto - Copy\EcbInSymmCryptoABSCase1.java"
+"```csv
+{EcbInSymmCryptoBBCase1.java, Cipher, 11, ""ECB mode is insecure"", ""ECB mode is insecure"", ""Use AES/CBC/PKCS5Padding with an IV"", Yes, 95}
+{EcbInSymmCryptoBBCase1.java, KeyGenerator, 8, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto - Copy\EcbInSymmCryptoBBCase1.java"
+"```plaintext
+{EcbInSymmCryptoCorrected.java, Cipher, 14, None, None, Secure, Yes, 95}
+{EcbInSymmCryptoCorrected.java, KeyGenerator, 12, None, None, Secure, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\ecbcrypto - Copy\EcbInSymmCryptoCorrected.java"
+"```csv
+{HttpProtocolABICase1.java, URL, 11, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolABICase1.java"
+"```csv
+File Name, JCA API or Classe,line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+HttpProtocolABICase2.java, URL, 14, None, None, N/A, Yes, 100
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolABICase2.java"
+"```csv
+{HttpProtocolABICase3.java, URL, 12, No Misuse, No Misuse, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolABICase3.java"
+"```csv
+{HttpProtocolABMC1.java, None, N/A, None, None, N/A, No, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolABMC1.java"
+"```csv
+{HttpProtocolABMCCase1.java, None, None, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolABMCCase1.java"
+"```
+{HttpProtocolABPSCase1.java, URL, 9, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolABPSCase1.java"
+"```csv
+{HttpProtocolABSCase1.java, URL, 13, Insecure Use of HTTP Protocol, Insecure Use of HTTP Protocol, Consider using HTTPS instead of HTTP, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolABSCase1.java"
+"```csv
+{HttpProtocolBBCase1.java, URL, 7, None, None, None, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolBBCase1.java"
+"Certainly! Here is the analysis of the provided Java code in the requested CSV format:
+
+```
+{HttpProtocolCase1Corrected.java, URL, 7, None, None, N/A, Yes, 100%}
+```
+
+Details:
+- **File Name:** HttpProtocolCase1Corrected.java
+- **JCA API or Classe:** URL
+- **Line:** 7
+- **Misuses across All Code Paths:** None
+- **Misuses in Executed Path:** None
+- **Secure Alternative if not secure:** N/A
+- **Executed from Main Method based on conditions?:** Yes
+- **Confidence Level(%):** 100%
+
+Analysis:
+- The code uses the `URL` class (not a part of JCA) to instantiate a URL object. There are no crypto-related operations or misuses in this code.
+- The URL is hardcoded and printed, indicating no security-related API is being misused.
+- Since there is no cryptography being used, there are no security concerns or alternatives needed.
+- The confidence level in the assessment is 100% due to the simplicity of the code and absence of cryptographic operations.C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolCase1Corrected.java"
+"```
+HttpProtocolCase2Corrected.java, URL, 11, None, None, None, Yes, 100
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\http\HttpProtocolCase2Corrected.java"
+"```
+{ImproperSocketManualHostABICase1.java, SSLSocketFactory, 12, Use of default SSLSocketFactory without proper hostname verification, Use of default SSLSocketFactory without proper hostname verification, Use a custom SSLSocketFactory with proper hostname verification or configure the default properly, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\impropersslsocketfactory\ImproperSocketManualHostABICase1.java"
+"```plaintext
+ImproperSocketManualHostABICase2.java, SSLSocketFactory.getDefault(), 21, Default SSLSocketFactory may not be properly configured for secure connections, Default SSLSocketFactory may not be properly configured for secure connections, Use a properly configured SSLSocketFactory with specific security parameters, Yes, 85
+ImproperSocketManualHostABICase2.java, SSLSocketFactory.createSocket(), 22, Hostname verification is not implemented, Hostname verification is not implemented, Implement strict hostname verification using a custom HostnameVerifier or by using SSLParameters, Yes, 90
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\impropersslsocketfactory\ImproperSocketManualHostABICase2.java"
+"```csv
+{ImproperSocketManualHostABSCase1.java, SSLSocketFactory, 23, Using default SSLSocketFactory without specifying TrustManager leads to potential MITM attacks, Using default SSLSocketFactory without specifying TrustManager leads to potential MITM attacks, Use SSLContext to create SSLSocketFactory with a specified TrustManager, No, 95}
+{ImproperSocketManualHostABSCase1.java, SSLSocket, 24, Creating socket with host verification not enabled, Creating socket with host verification not enabled, Enable hostname verification using SSLParameters or customize HostnameVerifier, No, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\impropersslsocketfactory\ImproperSocketManualHostABSCase1.java"
+"```csv
+ImproperSocketManualHostBBCase1.java, SSLSocketFactory, 9, Default SSLSocketFactory used without proper configuration, Default SSLSocketFactory used without proper configuration, Use an SSLSocketFactory with a properly configured TrustManager, Yes, 90%
+ImproperSocketManualHostBBCase1.java, SSLSocket, 10, Potential for Improper SSL/TLS Configuration, Improper verification of server identity, Use an SSLSocket with a properly configured SSL context and hostname verifier, Yes, 90%
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\impropersslsocketfactory\ImproperSocketManualHostBBCase1.java"
+"```csv
+{InsecureAsymmetricCipherABICase1.java, KeyPairGenerator.getInstance(""RSA""), 13, Key size < 2048 bits is insecure, Key size < 2048 bits is insecure, Use key size >= 2048 bits, Yes, 90}
+{InsecureAsymmetricCipherABICase1.java, Cipher.getInstance(""RSA""), 17, No issues detected, No issues detected, N/A, Yes, 95}
+{InsecureAsymmetricCipherABICase1.java, Cipher.init(Cipher.ENCRYPT_MODE, kp.getPublic()), 18, No issues detected, No issues detected, N/A, Yes, 95}
+{InsecureAsymmetricCipherABICase1.java, Cipher.getInstance(""RSA""), 25, No issues detected, No issues detected, N/A, Yes, 95}
+{InsecureAsymmetricCipherABICase1.java, Cipher.init(Cipher.DECRYPT_MODE, kp.getPrivate()), 26, No issues detected, No issues detected, N/A, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\insecureasymmetriccrypto\InsecureAsymmetricCipherABICase1.java"
+"```csv
+File Name, JCA API or Classe, line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+InsecureAsymmetricCipherABICase2.java, Cipher, 11, Small Key Size (1024 bits), Small Key Size (1024 bits), Use a key size of at least 2048 bits, Yes, 95
+InsecureAsymmetricCipherABICase2.java, KeyPairGenerator, 26, Small Key Size (1024 bits), Small Key Size (1024 bits), Use a key size of at least 2048 bits, Yes, 95
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\insecureasymmetriccrypto\InsecureAsymmetricCipherABICase2.java"
+"```csv
+{InsecureAsymmetricCipherABICase3.java, KeyPairGenerator, 16, Use of weak key size with RSA, Executed key size is 1024 bits, Use key size of at least 2048 bits, Yes, 95%}
+{InsecureAsymmetricCipherABICase3.java, Cipher, 21, No misuse identified, No misuse identified, N/A, Yes, 95%}
+{InsecureAsymmetricCipherABICase3.java, Cipher, 29, No misuse identified, No misuse identified, N/A, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\insecureasymmetriccrypto\InsecureAsymmetricCipherABICase3.java"
+"```csv
+{InsecureAsymmetricCipherABMC1.java, KeyPairGenerator.getInstance, 14, Use of weak key size for RSA, Use of weak key size for RSA if keySize < 2048, Use key size >= 2048, No, 95%}
+{InsecureAsymmetricCipherABMC1.java, Cipher.getInstance, 18, Use of default RSA/ECB/PKCS1Padding which might be insecure, Use of default RSA/ECB/PKCS1Padding which might be insecure, Consider specifying a mode and padding, such as ""RSA/ECB/OAEPWithSHA-256AndMGF1Padding"", No, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\insecureasymmetriccrypto\InsecureAsymmetricCipherABMC1.java"
+"```csv
+{InsecureAsymmetricCipherABMCCase1.java, None, N/A, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\insecureasymmetriccrypto\InsecureAsymmetricCipherABMCCase1.java"
+"```csv
+{InsecureAsymmetricCipherABPSCase1.java, KeyPairGenerator, 10, Weak key size (1024 bits) for RSA, None, Use a minimum key size of 2048 bits, Yes, 90%}
+{InsecureAsymmetricCipherABPSCase1.java, Cipher, 18, None, None, AES/GCM/NoPadding for encryption, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\insecureasymmetriccrypto\InsecureAsymmetricCipherABPSCase1.java"
+"```csv
+{InsecureAsymmetricCipherBBCase1.java, KeyPairGenerator.getInstance, 10, Use of small key size, Use of small key size, KeyPairGenerator.getInstance(""RSA"").initialize(2048), Yes, 95}
+{InsecureAsymmetricCipherBBCase1.java, Cipher.getInstance, 16, None, None, N/A, Yes, 95}
+{InsecureAsymmetricCipherBBCase1.java, Cipher.init, 17, None, None, N/A, Yes, 95}
+{InsecureAsymmetricCipherBBCase1.java, Cipher.getInstance, 24, None, None, N/A, Yes, 95}
+{InsecureAsymmetricCipherBBCase1.java, Cipher.init, 25, None, None, N/A, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\insecureasymmetriccrypto\InsecureAsymmetricCipherBBCase1.java"
+"```csv
+File Name,JCA API or Classe,line,Misuses across All Code Paths,Misuses in Executed Path,Secure Alternative if not secure,Executed from Main Method based on conditions?,Confidence Level(%)
+LessThan1000IterationPBEABHCase1.java,PBEParameterSpec,21,Using less than 1000 iterations for PBE,came from Map value assignment which is less than 1000,Use at least 1000 iterations for PBE as recommended by NIST,Yes,95
+LessThan1000IterationPBEABHCase1.java,SecureRandom,17,No misuse identified,No misuse identified,N/A,Yes,95
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABHCase1.java"
+"```csv
+{LessThan1000IterationPBEABICase1.java, PBEParameterSpec, 14, ""Insufficient Iteration Count (<1000)"", ""Insufficient Iteration Count (<1000)"", ""Use iteration count >= 1000"", ""Yes"", 95}
+{LessThan1000IterationPBEABICase1.java, SecureRandom, 11, None, None, None, ""Yes"", 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABICase1.java"
+"```csv
+File Name, JCA API or Classe, line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+LessThan1000IterationPBEABICase2.java, PBEParameterSpec, 21, Iteration count < 1000, Iteration count < 1000, Use iteration count >= 1000, Yes, 95
+LessThan1000IterationPBEABICase2.java, SecureRandom, 19, None, None, N/A, Yes, 95
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABICase2.java"
+"```plaintext
+{LessThan1000IterationPBEABICase3.java, PBEParameterSpec, 18, Weak Iteration Count (less than 1000 iterations), Weak Iteration Count (20 iterations), Use a count of at least 10000, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABICase3.java"
+"```csv
+{LessThan1000IterationPBEABMC1.java, PBEParameterSpec, 10, Should use iteration count >= 1000, Should use iteration count >= 1000 if count < 1000, PBEParameterSpec(salt, 1000) if count < 1000, No, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABMC1.java"
+"```csv
+{LessThan1000IterationPBEABMCCase1.java, , , , , ,False, 0%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABMCCase1.java"
+"```csv
+{LessThan1000IterationPBEABPSCase1.java, PBEParameterSpec, 18, ""None"", ""None"", ""None"", ""Yes"", 100}
+{LessThan1000IterationPBEABPSCase1.java, PBEParameterSpec, 19, ""None"", ""None"", ""None"", ""Yes"", 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABPSCase1.java"
+"```csv
+{LessThan1000IterationPBEABSCase1.java, PBEParameterSpec, 37, Iteration count less than 1000 (20 iterations), Iteration count less than 1000 (20 iterations), Use a minimum of 1000 iterations for PBEParameterSpec, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEABSCase1.java"
+"```csv
+{LessThan1000IterationPBEBBCase1.java, PBEParameterSpec, 14, Insecure iteration count < 1000, Insecure iteration count < 1000, Use iteration count >= 1000, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBEBBCase1.java"
+"```csv
+File Name, JCA API or Class, Line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+LessThan1000IterationPBECorrected.java, PBEParameterSpec, 13, None, None, N/A, Yes, 95
+LessThan1000IterationPBECorrected.java, SecureRandom, 11, None, None, N/A, Yes, 95
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\pbeiteration\LessThan1000IterationPBECorrected.java"
+"```csv
+{PredictableCryptographicKeyABHCase1.java, SecureRandom, 10, None, None, N/A, Yes, 100}
+{PredictableCryptographicKeyABHCase1.java, SecretKeySpec, 14, Predictable key generation, Predictable key generation, Use a secure key management process, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABHCase1.java"
+"```csv
+{PredictableCryptographicKeyABHCase2.java, SecretKeySpec, 16, Use of predictable cryptographic key, Use of predictable cryptographic key, Use a securely generated random key (e.g., using SecureRandom), Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABHCase2.java"
+"```csv
+{PredictableCryptographicKeyABICase1.java, SecretKeySpec, 14, Use of predictable key, Use of predictable key, Use a securely generated random key, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABICase1.java"
+"```csv
+{PredictableCryptographicKeyABICase2.java, SecretKeySpec, 18, Use of a default cryptographic key, Use of a default cryptographic key, Use a securely generated key, Yes, 95}
+{PredictableCryptographicKeyABICase2.java, SecureRandom, Not used, Use of secure random generation is missing, Use of secure random generation is missing, Use SecureRandom to generate cryptographic keys, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABICase2.java"
+"```csv
+{PredictableCryptographicKeyABICase3.java, SecretKeySpec, 16, Predictable key, Predictable key, Use a securely generated random key, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABICase3.java"
+"```csv
+{PredictableCryptographicKeyABMC1.java, SecretKeySpec, 9, Use of a predictable cryptographic key, Use of a predictable cryptographic key, Use a securely generated random key, No, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABMC1.java"
+"```csv
+{PredictableCryptographicKeyABMCCase1.java, N/A, N/A, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABMCCase1.java"
+"```csv
+{PredictableCryptographicKeyABPSCase1.java, SecretKeySpec, 18, Predictable key from string used as key material, Predictable key from string used as key material, Use key generation with SecureRandom (e.g., KeyGenerator with ""AES""), Yes, 95}
+{PredictableCryptographicKeyABPSCase1.java, SecureRandom, 12, Proper use with no associated misuses, Proper use with no associated misuses, None, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABPSCase1.java"
+"```csv
+File Name, JCA API or Class, Line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+PredictableCryptographicKeyABSCase1.java, Cipher, 39, Use of predictable cryptographic key, Use of predictable cryptographic key if system property is insecure, Use a key derivation function to generate secure keys, Yes, 90
+PredictableCryptographicKeyABSCase1.java, SecretKeySpec, 51, Use of predictable cryptographic key, Use of predictable cryptographic key if system property is insecure, Use a key derivation function to generate secure keys, Yes, 90
+PredictableCryptographicKeyABSCase1.java, Cipher.getInstance, 32, Potential misuse if algorithm specifications are not verified, No misuse, Ensure algorithm and mode meet security requirements, Yes, 95
+PredictableCryptographicKeyABSCase1.java, cipher.init, 54, Initialization could be insecure if key is predictable, Initialization could be insecure if key is predictable, Ensure secure random keys, Yes, 90
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABSCase1.java"
+"```csv
+{UnnamedFile.java, Cipher, Not Applicable, Improper Exception Handling, No Issues, Ensure Proper Exception Handling, Not Mentioned, 80%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyABSCase1.java"
+"```csv
+{PredictableCryptographicKeyBBCase1.java, SecretKeySpec, 10, Predictable key derived from a constant string, Predictable key derived from a constant string, Use a secure key generation method with SecureRandom, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyBBCase1.java"
+"```csv
+{PredictableCryptographicKeyCorrected.java, SecureRandom, 13, None, None, N/A, Yes, 95%}
+{PredictableCryptographicKeyCorrected.java, SecretKeySpec, 17, Use of predictable key, Use of predictable key, Use a truly random key or a key derivation function (KDF), Yes, 90%}
+{PredictableCryptographicKeyCorrected.java, Cipher, 19-21, None, None, N/A, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablecryptographickey\PredictableCryptographicKeyCorrected.java"
+"```csv
+{PredictableKeyStorePasswordABHCase1.java, KeyStore.getInstance, 18, None, None, Secure, Yes, 95}
+{PredictableKeyStorePasswordABHCase1.java, KeyStore.load, 22, Predictable key store password using SecureRandom-derived integers converted to string, Predictable key store password using SecureRandom-derived integers converted to string, Use a password derived from a stronger source or securely managed outside the code, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABHCase1.java"
+"```csv
+File Name, JCA API or Classe, line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+PredictableKeyStorePasswordABHCase2.java, KeyStore.getInstance, 19, None, None, N/A, Yes, 100
+PredictableKeyStorePasswordABHCase2.java, KeyStore.load, 22, Predictable password used (derived from fixed map values), Predictable password used (derived from fixed map values), Use a securely generated random password or obtain it securely from user/environment, Yes, 100
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABHCase2.java"
+"```csv
+{PredictableKeyStorePasswordABICase1.java, KeyStore.getInstance, 16, None, None, N/A, Yes, 100}
+{PredictableKeyStorePasswordABICase1.java, KeyStore.load, 19, Predictable password usage, Predictable password usage, Use a securely generated password, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABICase1.java"
+"```csv
+{PredictableKeyStorePasswordABICase2.java, KeyStore.getInstance, 19, None, None, None, Yes, 100}
+{PredictableKeyStorePasswordABICase2.java, KeyStore.load, 22, Use of Hardcoded Password, Use of Hardcoded Password (DEFAULT_ENCRYPT_KEY -> ""changeit""), Use a securely generated password or prompt user input securely, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABICase2.java"
+"```csv
+{PredictableKeyStorePasswordABICase3.java, KeyStore.getInstance, 16, None, None, N/A, Yes, 100%}
+{PredictableKeyStorePasswordABICase3.java, KeyStore.load, 19, Use of hardcoded password, Use of hardcoded password, Use a securely generated password from a secure configuration or environment variable., Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABICase3.java"
+"```csv
+{PredictableKeyStorePasswordABMC1.java, KeyStore, 12, Use of predictable URL and loading the keystore with a potentially weak password, Weak password in executed path, Use a stronger password and secure input mechanism, Yes (Go method can be executed from main if called), 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABMC1.java"
+"```csv
+{PredictableKeyStorePasswordABMCCase1.java, N/A, N/A, N/A, N/A, N/A, N/A, N/A}
+{PredictableKeyStorePasswordABMC1.java, KeyStore, N/A, Predictable password usage, Predictable password usage (since 'changeit' is hardcoded), Use a securely generated password, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABMCCase1.java"
+"```csv
+{PredictableKeyStorePasswordABPSCase1.java, KeyStore.getInstance, 14, None, None, N/A, Yes, 100}
+{PredictableKeyStorePasswordABPSCase1.java, SecureRandom, 19, None, None, N/A, Yes, 100}
+{PredictableKeyStorePasswordABPSCase1.java, KeyStore.load, 23, Use of predictable password with KeyStore.load, Potentially non-secure due to predictable password when choice <= 1, Use a secure password management system to generate a strong password, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABPSCase1.java"
+"```csv
+{PredictableKeyStorePasswordABSCase1.java, KeyStore.getInstance, 20, None, None, None, Yes, 100}
+{PredictableKeyStorePasswordABSCase1.java, KeyStore.load, 23, Predictable KeyStore Password, Predictable KeyStore Password, Use a securely generated random password, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordABSCase1.java"
+"```csv
+{PredictableKeyStorePasswordBBCase1.java, KeyStore, 17, Predictable password, Predictable password, Use a securely generated password, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordBBCase1.java"
+"```csv
+{PredictableKeyStorePasswordCorrected.java, KeyStore.getInstance, 18, None, None, N/A, Yes, 100}
+{PredictableKeyStorePasswordCorrected.java, URL, 20, None, None, N/A, Yes, 100}
+{PredictableKeyStorePasswordCorrected.java, SecureRandom, 22, None, None, N/A, Yes, 100}
+{PredictableKeyStorePasswordCorrected.java, KeyStore.load, 24, Use of predictable password, Using random integer as password might result in low entropy, Use a higher entropy password generator, Yes, 90}
+```
+C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablekeystorepassword\PredictableKeyStorePasswordCorrected.java"
+"```csv
+{PredictablePBEPasswordABHCase1.java, PBEKeySpec, 18, Predictable password as key material, Predictable password as key material, Use a securely generated random key or user-defined password, Yes, 90}
+{PredictablePBEPasswordABHCase1.java, SecureRandom, 22, None, None, , Yes, 95}
+{PredictablePBEPasswordABHCase1.java, SecureRandom, 12, None, None, , Yes, 95}
+{PredictablePBEPasswordABHCase1.java, PBEParameterSpec, 17, None, None, , Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABHCase1.java"
+"```csv
+{PredictablePBEPasswordABHCase2.java, PBEKeySpec, 21, ""Predictable password misuse"", ""Predictable password misuse"", ""Use a securely generated password"", Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABHCase2.java"
+"```csv
+{PredictablePBEPasswordABICase1.java, PBEKeySpec, 16, Predictable Password, Predictable Password, Use a securely generated password or derivation mechanism, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABICase1.java"
+"```plaintext
+{PredictablePBEPasswordABICase2.java, PBEKeySpec, 26, Weak encryption key due to predictable password, Weak encryption key due to predictable password, Use a securely generated random password or derive it securely from a passphrase using a secure method, Yes, 90}
+{PredictablePBEPasswordABICase2.java, SecureRandom, 25, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABICase2.java"
+"```csv
+{PredictablePBEPasswordABICase3.java, PBEKeySpec, 20, Predictable password usage, Predictable password usage, Use a password with sufficient entropy or derive it from a secure source, Yes, 95%}
+{PredictablePBEPasswordABICase3.java, SecureRandom, 16, None, None, N/A, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABICase3.java"
+"```csv
+{PredictablePBEPasswordABMC1.java, PBEKeySpec, 11, None, None, None, No, 90}
+{PredictablePBEPasswordABMC1.java, SecureRandom, 13, None, None, None, No, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABMC1.java"
+"```csv
+{PredictablePBEPasswordABMCCase1.java, N/A, N/A, N/A, N/A, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABMCCase1.java"
+"```csv
+{PredictablePBEPasswordABPSCase1.java, PBEKeySpec, 18, Predictable password, Predictable password, Use a password from a secure source or through user input, Yes when choice <= 1, 90}
+{PredictablePBEPasswordABPSCase1.java, PBEParameterSpec, N/A, N/A, N/A, N/A, N/A, N/A}
+{PredictablePBEPasswordABPSCase1.java, SecureRandom, 12, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABPSCase1.java"
+"```csv
+{PredictablePBEPasswordABSCase1.java, PBEKeySpec, 24, Predictable password, Predictable password, Use a securely-generated password, Yes, 90}
+{PredictablePBEPasswordABSCase1.java, SecureRandom, 21, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordABSCase1.java"
+"```csv
+{PredictablePBEPasswordBBCase1.java, PBEKeySpec, 16, Use of predictable password, Use of predictable password, Use a more secure password mechanism such as requesting user input securely, Yes, 95%}
+{PredictablePBEPasswordBBCase1.java, SecureRandom, 13, None, None, None, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordBBCase1.java"
+"```csv
+{PredictablePBEPasswordBBCase2.java, PBEKeySpec, 14, Use of predictable password 's', Use of predictable password 's', Use a securely generated random password, Yes, 90}
+{PredictablePBEPasswordBBCase2.java, PBEParameterSpec, 0, Not instantiated in provided code, N/A, Ensure secure instantiation with random salt and high iterations, Yes, 70}
+{PredictablePBEPasswordBBCase2.java, SecureRandom, 12, Proper use of SecureRandom for salt generation, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordBBCase2.java"
+"```csv
+File Name, JCA API or Class, line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)
+PredictablePBEPasswordCorrected.java, PBEKeySpec, 15, Use of short key length, Yes, No misuses detected in executed path, Yes, 95
+PredictablePBEPasswordCorrected.java, PBEParameterSpec, N/A, N/A, N/A, N/A, Yes, N/A
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictablepbepassword\PredictablePBEPasswordCorrected.java"
+"```csv
+{PredictableSeedsABHCase2.java, SecureRandom, 17, Using user-controlled seed for SecureRandom, Using user-controlled seed for SecureRandom, Use SecureRandom without setting a seed or use a Cryptographic Random Seed Generator, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABHCase2.java"
+"```csv
+{PredictableSeedsABHCase4.java, SecureRandom, 8, Use of predictable seed, Use of predictable seed, Use SecureRandom without a seed or with a securely generated seed, Yes, 95}
+{PredictableSeedsABHCase4.java, SecureRandom, 19, Use of predictable seed, Use of predictable seed, Use SecureRandom without a seed or with a securely generated seed, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABHCase4.java"
+"```csv
+{PredictableSeedsABICase1.java, SecureRandom.setSeed, 12, Use of predictable seed, Use of predictable seed, Do not manually set the seed or use a secure seed generated by SecureRandom itself, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABICase1.java"
+"```csv
+{PredictableSeedsABICase2.java, SecureRandom, 11, 'Use of SecureRandom with a predictable seed', 'Use of SecureRandom with a predictable seed', 'Use SecureRandom with default constructor or a truly random seed', Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABICase2.java"
+"```csv
+{PredictableSeedsABICase3.java, SecureRandom, 15, Use of predictable seed, Use of predictable seed, Use SecureRandom without setSeed or use a securely generated seed, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABICase3.java"
+"```csv
+{PredictableSeedsABICase4.java, SecureRandom, 18, Use of static seed, Static seed derived from DEFAULT_SEED, Use SecureRandom without explicit seed, Yes, 95}
+{PredictableSeedsABICase4.java, SecureRandom, 19, Predictable output due to static seed, Predictable output due to static seed in runtime, Use SecureRandom default constructor for non-static seeding, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABICase4.java"
+"```csv
+{PredictableSeedsABICase5.java, SecureRandom, 15, Using setSeed with specified seed, Using setSeed with specified seed, Use SecureRandom without setting a seed or use a non-deterministic seed source, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABICase5.java"
+"```csv
+{PredictableSeedsABICase6.java, SecureRandom, 14, Initialization with static seed, Initialization with static seed, Use SecureRandom without explicit seeding or seed with secure source, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABICase6.java"
+"```csv
+{PredictableSeedsABMC1.java, SecureRandom, 8, Setting a custom seed to SecureRandom can make it predictable, Setting a custom seed to SecureRandom can make it predictable, Use SecureRandom with no custom seed or a seed generated from a secure source, Not executed from main method, 90%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABMC1.java"
+"```csv
+{PredictableSeedsABMC2.java, SecureRandom, 7, Using predictable seed for SecureRandom, Using predictable seed for SecureRandom, Use default constructor of SecureRandom or seed from a secure source, No, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABMC2.java"
+"Certainly, let's analyze the provided Java code with respect to the specified conditions. Here is the analysis based on the given file content:
+
+```csv
+CSV Format:{File Name, JCA API or Class, line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)}
+PredictableSeedsABMCCase1.java, None, N/A, No JCA API detected, No JCA API detected, N/A, Yes, 100
+```
+
+**Analysis:**
+
+1. **JCA API Usage**: The provided ""PredictableSeedsABMCCase1.java"" file does not include any usage of Java Cryptography Architecture (JCA) APIs or classes. The code handles a byte array seed manipulation, potentially affecting cryptographic operations, but doesn't display JCA interaction in this snippet.
+
+2. **Misuses Across All Code Paths**: Since there are no JCA API usages present, there's no misuse to be found across any code paths in this file.
+
+3. **Misuses in Executed Path**: The executed path, based on initial conditions, doesn't demonstrate any misuse given that no cryptographic operations are defined in this segment.
+
+4. **Execution from Main Method**: The logic within `main()` is executed directly with no conditional branching, suggesting straightforward code execution.
+
+5. **Confidence Level**: The confidence level is set at 100% for this file snippet as the analysis requires detecting JCA components, which are absent here. The code simplicity further supports this confidence level.
+
+For a complete analysis, including cryptographic misuse detection, additional code that potentially performs cryptographic operations (e.g., class `PredictableSeedsABMC1`) must be included.C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABMCCase1.java"
+"```csv
+""PredictableSeedsABMCCase2.java"", ""None"", """", """", """", ""N/A"", ""Yes"", ""90""
+``` 
+
+The provided Java code does not include any Java Cryptography Architecture (JCA) API usages. Only a class is being instantiated, and a method is called with a predictable seed value, but since the cryptographic context is absent, no further analysis on misuses or secure alternatives is applicable.C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABMCCase2.java"
+"```csv
+{PredictableSeedsABPSCase1.java, SecureRandom, 11, Use of predictable seeds (setSeed with byte array), Use of predictable seeds (setSeed with byte array), Avoid setting seed manually to rely on SecureRandom's default seeding, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABPSCase1.java"
+"```csv
+{PredictableSeedsABPSCase2.java, SecureRandom(), 8, None, None, None, Yes, 95}
+{PredictableSeedsABPSCase2.java, SecureRandom(seed), 13, Use of a predictable seed, Use of a predictable seed, SecureRandom(), Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABPSCase2.java"
+"```plaintext
+{PredictableSeedsABSCase1.java, SecureRandom.setSeed, 31, Use of predictable seeds which can compromise randomness, Use of predictable seeds which can compromise randomness, Avoid setting a seed manually or use a strong random seed instead, No, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABSCase1.java"
+"Certainly! Here is the analysis of the provided Java code in the specified CSV format:
+
+```
+{File Name, JCA API or Classe,line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)}
+{PredictableSeedsABSCase2.java, SecureRandom, 26, Use of predictable seed, Use of predictable seed, Use SecureRandom with default constructor, N/A (no main method), 95}
+```
+
+**Analysis Explanation:**
+
+1. **JCA API Usages:** The code uses `SecureRandom` (line 26) initialized with a byte array containing a single predictable byte value as a seed.
+
+2. **Misuses across All Code Paths:** Using a predictable seed undermines the cryptographic strength of `SecureRandom`. 
+
+3. **Misuses in Executed Path:** The misuse is directly evident in the executed code path within `method1`, which inherits the default seed from the constructor and uses it to initialize `SecureRandom`.
+
+4. **Runtime Accessibility:** There is no `main` method implemented in the provided code, so this execution path cannot be accessed as a runtime starting point based on initial conditions.
+
+5. **Secure Alternative:** To securely utilize `SecureRandom`, it should be instantiated using the default constructor to ensure a truly random seed.
+
+6. **Confidence Level:** The confidence level is set at 95% because the misuse is clear, consistent, and easy to detect given the simple code structure.C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsABSCase2.java"
+"```csv
+{PredictableSeedsBBCase1.java, SecureRandom, 9, Using predictable seed with `setSeed(byte[])` can compromise randomness, Usage of `setSeed(byte[])` with fixed bytes is insecure, Avoid using `setSeed` unless necessary; if needed, use a strong, unpredictable value for seeding, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsBBCase1.java"
+"```
+{PredictableSeedsBBCase2.java, SecureRandom, 8, ""Use of predictable seed"", ""Use of predictable seed"", ""SecureRandom sr = new SecureRandom()"", Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsBBCase2.java"
+"```
+{PredictableSeedsCorrected.java, SecureRandom, 8, ""Inappropriate seed setting with predictable value"", ""Inappropriate seed setting with predictable value"", ""Avoid setting seed or use a secure random seed"", Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\predictableseeds\PredictableSeedsCorrected.java"
+"```csv
+{StaticInitializationVectorABHCase1.java, KeyGenerator, 11, None, None, N/A, Yes, 100}
+{StaticInitializationVectorABHCase1.java, Cipher, 13, Static IV usage, Static IV usage, Use a SecureRandom-generated IV, Yes, 100}
+{StaticInitializationVectorABHCase1.java, IvParameterSpec, 17, Static IV usage, Static IV usage, Use a SecureRandom-generated IV, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABHCase1.java"
+"```csv
+{StaticInitializationVectorABHCase2.java, KeyGenerator, 13, None, None, None, Yes, 100}
+{StaticInitializationVectorABHCase2.java, Cipher, 15, Static IV usage, Static IV usage, Use SecureRandom to generate IV, Yes, 100}
+{StaticInitializationVectorABHCase2.java, IvParameterSpec, 25, Static IV usage, Static IV usage, Use SecureRandom to generate IV, Yes, 100}
+{StaticInitializationVectorABHCase2.java, Cipher.init, 27, Static IV usage, Static IV usage, Use SecureRandom to generate IV, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABHCase2.java"
+"```csv
+{StaticInitializationVectorABICase1.java, javax.crypto.spec.IvParameterSpec, 12, Static IV usage, Static IV usage, Use random IV with SecureRandom, Yes, 90}
+{StaticInitializationVectorABICase1.java, javax.crypto.KeyGenerator, 13, None, None, N/A, Yes, 100}
+{StaticInitializationVectorABICase1.java, javax.crypto.Cipher, 15, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABICase1.java"
+"```plaintext
+{StaticInitializationVectorABICase2.java, IvParameterSpec, 15, Use of static IV, Use of static IV, Use a securely generated random IV, Yes, 95}
+{StaticInitializationVectorABICase2.java, KeyGenerator, 16, None, None, N/A, Yes, 100}
+{StaticInitializationVectorABICase2.java, SecretKey, 17, None, None, N/A, Yes, 100}
+{StaticInitializationVectorABICase2.java, Cipher, 18, None, None, N/A, Yes, 100}
+{StaticInitializationVectorABICase2.java, Cipher.init, 20, Use of static IV, Use of static IV, Use a securely generated random IV, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABICase2.java"
+"```plaintext
+{StaticInitializationVectorABICase3.java, IvParameterSpec, 12, Publicly-specified IV, Publicly-specified IV, Use a secure random IV, Yes, 90}
+{StaticInitializationVectorABICase3.java, KeyGenerator, 13, -, -, -, Yes, 100}
+{StaticInitializationVectorABICase3.java, SecretKey, 14, -, -, -, Yes, 100}
+{StaticInitializationVectorABICase3.java, Cipher, 15, -, -, -, Yes, 100}
+{StaticInitializationVectorABICase3.java, Cipher.init, 17, Static IV, Static IV, Use java.security.SecureRandom to generate IV, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABICase3.java"
+"```plaintext
+{StaticInitializationVectorABMC1.java, IvParameterSpec, 14, Static IV considered non-secure, Static IV misuse, Use SecureRandom to generate IV, Not executed from Main Method, 90}
+{StaticInitializationVectorABMC1.java, KeyGenerator, 15, No Misuse, No Misuse, N/A, Not executed from Main Method, 100}
+{StaticInitializationVectorABMC1.java, Cipher, 17, No Misuse, No Misuse, N/A, Not executed from Main Method, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABMC1.java"
+"```csv
+{StaticInitializationVectorABMC1.java, N/A, N/A, N/A, N/A, N/A, No, N/A}
+{StaticInitializationVectorABMCCase1.java, String.getBytes, 12, None, None, None, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABMCCase1.java"
+"```csv
+{StaticInitializationVectorABPSCase1.java, KeyGenerator, 11, , , , Yes, 100}
+{StaticInitializationVectorABPSCase1.java, KeyGenerator.getInstance, 11, , , , Yes, 100}
+{StaticInitializationVectorABPSCase1.java, Cipher, 13, , , , Yes, 100}
+{StaticInitializationVectorABPSCase1.java, Cipher.getInstance, 13, , , , Yes, 100}
+{StaticInitializationVectorABPSCase1.java, SecureRandom, 15, , , , Yes, 100}
+{StaticInitializationVectorABPSCase1.java, IvParameterSpec, 20, Use of static IV, If choice <= 1: Use of static IV, Use SecureRandom for all IVs, Yes, 95}
+{StaticInitializationVectorABPSCase1.java, cipher.init, 22, Use of static IV, If choice <= 1: Use of static IV, Use SecureRandom for all IVs, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABPSCase1.java"
+"```csv
+{StaticInitializationVectorABSCase1.java, KeyGenerator.getInstance, 22, None, None, N/A, No, 90%}
+{StaticInitializationVectorABSCase1.java, Cipher.getInstance, 24, Static IV usage, Static IV usage, Use a secure random generator for IV, No, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorABSCase1.java"
+"```csv
+{StaticInitializationVectorBBCase1.java, KeyGenerator.getInstance(""AES""), 11, None, None, N/A, Yes, 100%}
+{StaticInitializationVectorBBCase1.java, Cipher.getInstance(""AES/CBC/PKCS5Padding""), 13, Static IV usage, Static IV usage, Use a securely generated random IV, Yes, 100%}
+{StaticInitializationVectorBBCase1.java, IvParameterSpec, 17, Static IV usage, Static IV usage, Use a securely generated random IV, Yes, 100%}
+{StaticInitializationVectorBBCase1.java, cipher.init(Cipher.ENCRYPT_MODE,key,ivSpec), 19, None, None, N/A, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorBBCase1.java"
+"```csv
+{StaticInitializationVectorCorrected.java, KeyGenerator, 27, None, None, N/A, Yes, 100}
+{StaticInitializationVectorCorrected.java, SecretKey, 28, None, None, N/A, Yes, 100}
+{StaticInitializationVectorCorrected.java, Cipher, 29, None, None, N/A, Yes, 100}
+{StaticInitializationVectorCorrected.java, SecureRandom, 31, None, None, N/A, Yes, 100}
+{StaticInitializationVectorCorrected.java, IvParameterSpec, 35, None, None, N/A, Yes, 100}
+{StaticInitializationVectorCorrected.java, Cipher.init, 37, None, None, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorCorrected.java"
+"Unfortunately, I can't generate the CSV format you're requesting because the provided Java code snippet is incomplete. The snippet shows only the `main` method that executes a `go()` method on an instance of `StaticInitializationVectorCorrected`, but the `StaticInitializationVectorCorrected` class and its methods are not provided.
+
+To analyze cryptographic code accurately, I would need access to the whole file or complete relevant sections where cryptographic APIs are actually used. If you can provide more information or the full context, I'd be glad to help with the analysis.C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticinitializationvector\StaticInitializationVectorCorrected.java"
+"```csv
+{StaticSaltsABHCase1.java, PBEParameterSpec, 17, Static salt value is a misuse (should be random/generated), Static salt in line 22 used in executed path, Use SecureRandom to generate salt, Yes, 95%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABHCase1.java"
+"```
+{StaticSaltsABICase1.java, PBEParameterSpec, 13, Use of static salts, Use of static salts, Use a securely generated random salt, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABICase1.java"
+"```csv
+{StaticSaltsABICase2.java, PBEParameterSpec, 19, Static salt use, Static salt use, Use a securely generated random salt, Yes, 90}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABICase2.java"
+"```plaintext
+{StaticSaltsABICase3.java, PBEParameterSpec, 13, Use of a static salt, Use of a static salt, Generate a random salt for each encryption operation, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABICase3.java"
+"```plaintext
+{StaticSaltsABMC1.java, PBEParameterSpec, 8, Use of static salts in cryptographic operations, Use of static salts, Use random/sufficiently unique salts, No, 90%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABMC1.java"
+"```csv
+{StaticSaltsABMC1.java, ""MessageDigest""/""Cipher""/""SecretKeyFactory""/etc., line_number, ""Static Salt Used"", ""Static Salt Used"", ""Use a SecureRandom to generate a random salt"", ""Yes"", 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABMCCase1.java"
+"```csv
+{StaticSaltsABPSCase1.java, PBEParameterSpec, 14, Usage of a static salt, Usage of a static salt if choice <= 1, Use a dynamically generated salt for all cases, Yes, 95}
+{StaticSaltsABPSCase1.java, SecureRandom, 11, No misuse, No misuse, N/A, Yes, 100}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABPSCase1.java"
+"```csv
+{StaticSaltsABSCase1.java, PBEParameterSpec, 19, Static salt usage, Static salt usage, Use a securely generated random salt (e.g., SecureRandom), Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsABSCase1.java"
+"```csv
+{StaticSaltsBBCase1.java, PBEParameterSpec, 11, Use of static salt, Use of static salt, Use a random or unique salt for each encryption operation, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsBBCase1.java"
+"```csv
+{StaticSaltsCorrected.java, PBEParameterSpec, 12, Use of PBEParameterSpec without potential misuse, Use of PBEParameterSpec without misuse in executed path, N/A, Yes, 95}
+{StaticSaltsCorrected.java, SecureRandom, 11, Proper use of SecureRandom, Proper use of SecureRandom in executed path, N/A, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\staticsalts\StaticSaltsCorrected.java"
+"```csv
+{UntrustedPRNGCase1.java, java.util.Random, 6, Uses an insecure PRNG (java.util.Random), Uses an insecure PRNG, java.security.SecureRandom, Yes, 95}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\untrustedprng\UntrustedPRNGCase1.java"
+"```plaintext
+{UntrustedPRNGCorrected.java, SecureRandom, 7, None, None, N/A, Yes, 100%}
+```C:\Users\ef28\Downloads\cryptoapi-bench-master\cryptoapi-bench-master\src\main\java\org\cryptoapi\bench\untrustedprng\UntrustedPRNGCorrected.java"
