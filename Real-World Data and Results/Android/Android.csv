@@ -1,0 +1,330 @@
+﻿File name,NAMESPACE,JCA API,Category,Vulnerable?
+aamra.korbo.joy-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+aamra.korbo.joy-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+aamra.korbo.joy-a,javax.crypto,Cipher,basic,cbc without padding
+abalone.nepo.app-ahj,javax.crypto,Cipher,basic,cbc
+abalone.nepo.app-ahj,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+abalone.nepo.app-ahj,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+abalone.nepo.app-ahj,javax.crypto.spec,IvParameterSpec,basic,yes
+abalone.nepo.app-yy,javax.crypto,Cipher,path_sensitive,no
+abalone.nepo.app-zb,javax.crypto,KeyPairGenerator,path_sensitive,no
+abalone.nepo.app-zc,javax.crypto,Mac,path_sensitive,no
+abalone.nepo.app-zd,javax.crypto,MessageDigest,path_sensitive,no
+abalone.nepo.app-ze,javax.crypto,Signature,path_sensitive,no
+abbb.parkpolucecar.nofalsenewapp-yy,javax.crypto,Cipher,path_sensitive,no
+abbb.parkpolucecar.nofalsenewapp-yz,javax.crypto,KeyAgreement,interprocedural,no
+abbb.parkpolucecar.nofalsenewapp-za,javax.crypto,Cipher,interprocedural,no
+aboard.and.magichangul-o,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+aboard.and.magichangul-o,javax.crypto,Cipher,basic,cbc
+aboard.and.magichangul-o,javax.crypto.spec,IvParameterSpec,basic,yes
+academy.marius.leontiuc-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+academy.marius.leontiuc-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+academy.marius.leontiuc-a,javax.crypto,Cipher,basic,cbc
+ajt274.psovdxoieon274.kgjvbqpsss274-Ohzylmnvkajcbrdxw,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+ajt274.psovdxoieon274.kgjvbqpsss274-Ohzylmnvkajcbrdxw,javax.crypto,Cipher,basic,yes 
+akubisakerja.ujian.apps-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+akubisakerja.ujian.apps-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+akubisakerja.ujian.apps-a,javax.crypto,Cipher,basic,cbc
+all.air.ts-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+all.air.ts-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+all.air.ts-a,javax.crypto,Cipher,basic,cbc
+all.networks.pk-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+all.networks.pk-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+all.networks.pk-a,javax.crypto,Cipher,basic,cbc
+analogclocklivewallpaper.analogclock-c,javax.crypto,MessageDigest,field sensitive,yes
+analogclocklivewallpaper.analogclock-n,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+analogclocklivewallpaper.analogclock-n,javax.crypto,Cipher,basic,cbc
+analogclocklivewallpaper.analogclock-n,javax.crypto.spec,IvParameterSpec,basic,conditional
+apk.slotonline.heru-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+apk.slotonline.heru-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+apk.slotonline.heru-a,javax.crypto,Cipher,basic,cbc
+app.carilo.com-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+app.carilo.com-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+app.carilo.com-a,javax.crypto,Cipher,basic,cbc
+app.chat.ficom-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+app.chat.ficom-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+app.chat.ficom-a,javax.crypto,Cipher,basic,cbc
+app.chat.first1-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+app.chat.first1-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+app.chat.first1-a,javax.crypto,Cipher,basic,cbc
+app.mivzaklive.news-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+app.mivzaklive.news-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+app.mivzaklive.news-a,javax.crypto,Cipher,basic,cbc
+app.net.blueworldcosmetics-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+app.net.blueworldcosmetics-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+app.net.blueworldcosmetics-a,javax.crypto,Cipher,basic,cbc
+app.ng.katlego-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+app.ng.katlego-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+app.ng.katlego-a,javax.crypto,Cipher,basic,cbc
+app.remesas.vzla-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+app.remesas.vzla-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+app.remesas.vzla-a,javax.crypto,Cipher,basic,cbc
+app.restaurantenaweb.delivery-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+app.restaurantenaweb.delivery-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+app.restaurantenaweb.delivery-a,javax.crypto,Cipher,basic,cbc
+app.s.jagoanssh_com-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+app.s.jagoanssh_com-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,
+app.s.jagoanssh_com-a,javax.crypto,Cipher,basic,cbc
+app.s.jagoanssh_com-a,javax.crypto,Cipher,basic,cbc
+area.client.daxportugal-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+area.client.daxportugal-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+area.client.daxportugal-a,javax.crypto,Cipher,basic,cbc
+arpors.goyal.smemultinational-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+arpors.goyal.smemultinational-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+arpors.goyal.smemultinational-a,javax.crypto,Cipher,basic,cbc
+artebo.it.artisti-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+artebo.it.artisti-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+artebo.it.artisti-a,javax.crypto,Cipher,basic,cbc
+ascend.advisory.bizzsolutions-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+ascend.advisory.bizzsolutions-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+ascend.advisory.bizzsolutions-a,javax.crypto,Cipher,basic,cbc
+asia.mcproject.safelink-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+asia.mcproject.safelink-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+asia.mcproject.safelink-a,javax.crypto,Cipher,basic,cbc
+bangladesh.cadet.academy-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+bangladesh.cadet.academy-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+bangladesh.cadet.academy-a,javax.crypto,Cipher,basic,cbc
+bd.kroy.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+bd.kroy.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+bd.kroy.app-a,javax.crypto,Cipher,basic,cbc
+biermann.car.care-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+biermann.car.care-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+biermann.car.care-a,javax.crypto,Cipher,basic,cbc
+br.borabora.loja-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+br.borabora.loja-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+br.borabora.loja-a,javax.crypto,Cipher,basic,cbc
+br.chefexpress.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+br.chefexpress.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+br.chefexpress.app-a,javax.crypto,Cipher,basic,cbc
+br.com.doutrinafiel-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+br.com.doutrinafiel-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+br.com.doutrinafiel-a,javax.crypto,Cipher,basic,cbc
+br.goshopping.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+br.goshopping.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+br.goshopping.app-a,javax.crypto,Cipher,basic,cbc
+br.juicedelivery.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+br.juicedelivery.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+br.juicedelivery.app-a,javax.crypto,Cipher,basic,cbc
+br.juicedelivery.loja-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+br.juicedelivery.loja-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+br.juicedelivery.loja-a,javax.crypto,Cipher,basic,cbc
+br.lbfood.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+br.lbfood.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+br.lbfood.app-a,javax.crypto,Cipher,basic,cbc
+br.lbfoodcomerciante.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+br.lbfoodcomerciante.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+br.lbfoodcomerciante.app-a,javax.crypto,Cipher,basic,cbc
+br.lbfoodmoto.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+br.lbfoodmoto.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+br.lbfoodmoto.app-a,javax.crypto,Cipher,basic,cbc
+br.lbfoodmoto.app-a,javax.crypto,Cipher,basic,cbc
+br.spbank.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+br.spbank.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+br.spbank.app-a,javax.crypto,Cipher,basic,cbc
+cdom.taqqqta.matads-zzaw,javax.crypto,Cipher,basic,cbc
+cdom.taqqqta.matads-zzaw,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+cdom.taqqqta.matads-zzaw,javax.crypto.spec,IvParameterSpec,basic,yes
+cdom.taqqqta.matads-zzaw,javax.crypto.spec,IvParameterSpec,basic,yes
+cdom.taqqqta.matads-zzaw,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+cdom.taqqqta.matads-zzaw,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+cellpoint.sylhet.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+cellpoint.sylhet.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+cellpoint.sylhet.app-a,javax.crypto,Cipher,basic,cbc
+cms.coopify.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+cms.coopify.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+cms.coopify.app-a,javax.crypto,Cipher,basic,cbc
+com.aaa.service-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.aaa.service-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.aaa.service-a,javax.crypto,Cipher,basic,cbc
+com.abdussamadsamadani.malayalam_speech-a,javax.crypto.spec,IvParameterSpec,basic,no
+com.abdussamadsamadani.malayalam_speech-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.abdussamadsamadani.malayalam_speech-a,javax.crypto,Cipher,basic,cbc
+com.accessorieshub.app-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.accessorieshub.app-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.accessorieshub.app-a,javax.crypto,Cipher,basic,cbc
+com.acua.moderntechnology-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.acua.moderntechnology-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.acua.moderntechnology-a,javax.crypto,Cipher,basic,cbc
+com.adach.tech-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.adach.tech-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.adach.tech-a,javax.crypto,Cipher,basic,cbc
+com.akinfotools.application-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.akinfotools.application-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.akinfotools.application-a,javax.crypto,Cipher,basic,cbc
+com.akinterprises.sastamart-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.akinterprises.sastamart-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.akinterprises.sastamart-a,javax.crypto,Cipher,basic,cbc
+com.aktaxi.driver-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.aktaxi.driver-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.aktaxi.driver-a,javax.crypto,Cipher,basic,cbc
+com.aktaxi.riderapp-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.aktaxi.riderapp-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.aktaxi.riderapp-a,javax.crypto,Cipher,basic,cbc
+com.al.dlnaserver-ARIA,javax.crypto.spec,IvParameterSpec,basic,no
+com.al.dlnaserver-ARIA,javax.crypto.spec,IvParameterSpec,field sensitive,no
+com.al.dlnaserver-ARIA,javax.crypto.spec,IvParameterSpec,field sensitive,no
+com.al.dlnaserver-BcKeyStoreSpi,javax.crypto,Cipher,interprocedural,not recommended
+com.al.dlnaserver-BcKeyStoreSpi,javax.crypto,SecretKeyFactory,interprocedural,not recommended
+com.al.dlnaserver-BcKeyStoreSpi,javax.crypto,CipherInputStream,basic,not recommended
+com.al.dlnaserver-BcKeyStoreSpi,javax.crypto.spec,SecretKeySpec,basic,no
+com.al.dlnaserver-BcKeyStoreSpi,javax.crypto.spec,PBEKeySpec,multiple class,no
+com.al.dlnaserver-BcKeyStoreSpi,javax.crypto.spec,PBEParameterSpec,multiple class,no
+com.al.dlnaserver-Camellia,javax.crypto.spec,IvParameterSpec,basic,yes
+com.al.dlnaserver-CAST5,javax.crypto.spec,IvParameterSpec,basic,yes
+com.al.dlnaserver-CAST5,javax.crypto.spec,IvParameterSpec,field sensitive,yes
+com.al.dlnaserver-DES,java.security,AlgorithmParameters,basic,yes
+com.al.dlnaserver-DES,javax.crypto.spec,IvParameterSpec,basic,no
+com.al.dlnaserver-DES,javax.crypto.spec,SecretKeySpec,basic,yes
+com.al.dlnaserver-DES,javax.crypto.spec,SecretKeySpec,field sensitive,no
+com.al.dlnaserver-DES,javax.crypto.spec,SecretKeySpec,multiple class,no
+com.al.dlnaserver-DESede,java.security,AlgorithmParameters,basic,yes
+com.al.dlnaserver-DESede,javax.crypto.spec,IvParameterSpec,basic,no
+com.al.dlnaserver-DESede,javax.crypto.spec,SecretKeySpec,basic,yes
+com.al.dlnaserver-DESede,javax.crypto.spec,SecretKeySpec,multiple class,no
+com.al.dlnaserver-DESede,javax.crypto.spec,SecretKeySpec,field sensitive,no
+com.al.dlnaserver-DESede,javax.crypto.spec,SecretKeySpec,field sensitive,no
+com.al.dlnaserver-IDEA,javax.crypto.spec,IvParameterSpec,basic,no
+com.al.dlnaserver-IDEA,javax.crypto.spec,,interprocedural,no
+com.al.dlnaserver-IDEA,javax.crypto.spec,IvParameterSpec,field sensitive,no
+com.al.dlnaserver-Noekeon,javax.crypto.spec,IvParameterSpec,basic,yes
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto.spec,PBEParameterSpec,basic,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto.spec,PBEKeySpec,interprocedural 2,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto,Cipher,basic,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto,Cipher,interprocedural,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto.spec,IvParameterSpec,basic,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto.spec,PBEKeySpec,interprocedural 1,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto.spec,PBEParameterSpec,basic,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto.spec,PBEParameterSpec,interprocedural 1,no
+com.al.dlnaserver-PKCS12KeyStoreSpi,javax.crypto.spec,PBEParameterSpec,basic,no
+com.al.dlnaserver-ProviderJcaJceHelper,javax.crypto,Signature,interprocedural 1,no
+com.al.dlnaserver-ProviderJcaJceHelper,javax.crypto,SecureRandom,interprocedural 1,no
+com.al.dlnaserver-RC5,,,basic,yes
+com.al.dlnaserver-RC5,javax.crypto.spec,IvParameterSpec,basic,yes
+com.al.dlnaserver-RC6,,,basic,yes
+com.al.dlnaserver-RC6,javax.crypto.spec,IvParameterSpec,basic,yes
+com.al.dlnaserver-SEED,javax.crypto.spec,IvParameterSpec,basic,no
+com.al.dlnaserver-Shacal2,javax.crypto.spec,IvParameterSpec,basic,yes
+com.al.dlnaserver-SM4,javax.crypto.spec,IvParameterSpec,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,SecureRandom,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,SecureRandom,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,Cipher,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,Cipher,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,Cipher,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto.spec,SecretKeySpec,multiple class,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,MessageDigest,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,Cipher,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,Cipher,basic,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto.spec,SecretKeySpec,multiple class,yes
+com.alekoleg.ldbada-NTLMEngineImpl,javax.crypto,MessageDigest,basic,yes
+com.ams.academy-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.ams.academy-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.ams.academy-a,javax.crypto,Cipher,basic,cbc
+com.an.gallery-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.an.gallery-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.an.gallery-a,javax.crypto,Cipher,basic,cbc
+com.Androidwebxds-C0034,javax.crypto,MessageDigest,basic,yes
+com.Androidwebxds-C0034,javax.crypto.spec,IvParameterSpec,basic,yes
+com.Androidwebxds-C0034,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.Androidwebxds-C0034,javax.crypto,Cipher,basic,CBC
+com.Androidwebxds-C0034,javax.crypto.spec,IvParameterSpec,basic,yes
+com.Androidwebxds-C0034,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.Androidwebxds-C0034,javax.crypto,Cipher,basic,CBC
+com.apex.trading-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.apex.trading-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.apex.trading-a,javax.crypto,Cipher,basic,cbc
+com.apnasathi-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.apnasathi-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.apnasathi-a,javax.crypto,Cipher,basic,cbc
+com.app.artikelcara10-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.app.artikelcara10-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.app.artikelcara10-a,javax.crypto,Cipher,basic,cbc
+com.app.avilltech-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.avilltech-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.avilltech-a,javax.crypto,Cipher,basic,cbc
+com.app.emilyagrosv2-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.emilyagrosv2-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.emilyagrosv2-a,javax.crypto,Cipher,basic,cbc
+com.app.gmart360-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.gmart360-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.gmart360-a,javax.crypto,Cipher,basic,cbc
+com.app.johnpstore-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.johnpstore-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.johnpstore-a,javax.crypto,Cipher,basic,cbc
+com.app.oldkashmirimages-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.app.oldkashmirimages-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.app.oldkashmirimages-a,javax.crypto,Cipher,basic,cbc
+com.app.pishonapp-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.pishonapp-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.pishonapp-a,javax.crypto,Cipher,basic,cbc
+com.app.rechargepluss-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.rechargepluss-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.rechargepluss-a,javax.crypto,Cipher,basic,cbc
+com.app.swachhbhumipune-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.swachhbhumipune-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.swachhbhumipune-a,javax.crypto,Cipher,basic,cbc
+com.app.swatisingh6342-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.app.swatisingh6342-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.app.swatisingh6342-a,javax.crypto,Cipher,basic,cbc
+com.appmarketpro.vincheckpro2-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.appmarketpro.vincheckpro2-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.appmarketpro.vincheckpro2-a,javax.crypto,Cipher,basic,cbc
+com.appmarketpro.writeappreviews-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.appmarketpro.writeappreviews-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.appmarketpro.writeappreviews-a,javax.crypto,Cipher,basic,cbc
+com.apurranna.utshoitsltd-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.apurranna.utshoitsltd-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.apurranna.utshoitsltd-a,javax.crypto,Cipher,basic,cbc
+com.arba.web2apk-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.arba.web2apk-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.arba.web2apk-a,javax.crypto,Cipher,basic,cbc
+com.arivinnilav.safuvan_saqafi-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.arivinnilav.safuvan_saqafi-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.arivinnilav.safuvan_saqafi-a,javax.crypto,Cipher,basic,cbc
+com.art.website2apk-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.art.website2apk-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.art.website2apk-a,javax.crypto,Cipher,basic,cbc
+com.buddy.game-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,no
+com.buddy.game-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,no
+com.buddy.game-a,javax.crypto,Cipher,basic,cbc
+com.cab.culture-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.cab.culture-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.cab.culture-a,javax.crypto,Cipher,basic,cbc
+com.cabinetcelestecom.cedis-a,javax.crypto.spec,IvParameterSpec,interprocedural 1,yes
+com.cabinetcelestecom.cedis-a,javax.crypto.spec,SecretKeySpec,interprocedural 1,yes
+com.cabinetcelestecom.cedis-a,javax.crypto,Cipher,basic,cbc
+com.camerafreezetime.specialeffectscamera-ae,javax.crypto,Cipher,basic,cbc
+com.camerafreezetime.specialeffectscamera-ae,javax.crypto,Cipher,basic,cbc
+com.camerafreezetime.specialeffectscamera-ae,javax.crypto,Cipher,basic,yes
+com.camerafreezetime.specialeffectscamera-ae,javax.crypto.spec,IvParameterSpec,basic,yes
+com.camerafreezetime.specialeffectscamera-ae,javax.crypto.spec,SecretKeySpec,interprocedural 3,cbc
+com.camerafreezetime.specialeffectscamera-ae,javax.crypto,MessageDigest,basic,no
+com.rfo.Basic-Basic,javax.crypto,CipherInputStream,basic,no
+com.rfo.Basic-Basic,javax.crypto.spec,PBEKeySpec,multiple class,yes
+com.rfo.Basic-Basic,javax.crypto.spec,PBEKeySpec,field sensitive,yes
+com.rfo.Basic-Basic,javax.crypto,SecretKeyFactory,basic,yes
+com.rfo.Basic-Basic,javax.crypto,Cipher,basic,yes
+com.rfo.Basic-Basic,javax.crypto.spec,PBEParameterSpec,field sensitive,yes
+com.rfo.BASICLauncher-Basic,javax.crypto,CipherInputStream,basic,no
+com.rfo.BASICLauncher-Basic,javax.crypto.spec,PBEKeySpec,multiple class,yes
+com.rfo.BASICLauncher-Basic,javax.crypto.spec,PBEKeySpec,field sensitive,yes
+com.rfo.BASICLauncher-Basic,javax.crypto,SecretKeyFactory,basic,yes
+com.rfo.BASICLauncher-Basic,javax.crypto,Cipher,basic,yes
+com.rfo.BASICLauncher-Basic,javax.crypto.spec,PBEParameterSpec,interprocedural2,yes
+com.rfo.cuckooclock-Basic,javax.crypto,CipherInputStream,basic,no
+com.rfo.cuckooclock-Basic,javax.crypto.spec,PBEKeySpec,multiple class,yes
+com.rfo.cuckooclock-Basic,javax.crypto.spec,PBEKeySpec,field sensitive,yes
+com.rfo.cuckooclock-Basic,javax.crypto,SecretKeyFactory,basic,yes
+com.rfo.cuckooclock-Basic,javax.crypto,Cipher,basic,yes
+com.rfo.cuckooclock-Basic,javax.crypto.spec,PBEParameterSpec,field sensitive,yes
+com.rfo.dualview-Basic,javax.crypto,CipherInputStream,basic,no
+com.rfo.dualview-Basic,javax.crypto.spec,PBEKeySpec,multiple class,yes
+com.rfo.dualview-Basic,javax.crypto.spec,PBEKeySpec,field sensitive,yes
+com.rfo.dualview-Basic,javax.crypto,SecretKeyFactory,basic,yes
+com.rfo.dualview-Basic,javax.crypto,Cipher,basic,yes
+com.rfo.dualview-Basic,javax.crypto.spec,PBEParameterSpec,field sensitive,yes
+com.rfo.gogocontours-Basic,javax.crypto,CipherInputStream,basic,no
+com.rfo.gogocontours-Basic,javax.crypto.spec,PBEKeySpec,multiple class,yes
+com.rfo.gogocontours-Basic,javax.crypto.spec,PBEKeySpec,field sensitive,no
+com.rfo.gogocontours-Basic,javax.crypto,SecretKeyFactory,basic,no
+com.rfo.gogocontours-Basic,javax.crypto,Cipher,basic,no
+com.rfo.gogocontours-Basic,javax.crypto.spec,PBEParameterSpec,field sensitive,no
