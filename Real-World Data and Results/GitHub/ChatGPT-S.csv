@@ -1,0 +1,383 @@
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Cipher instance reuse without reinitialization or re-randomization}
+{Vulnerable:No,Name of vulnerability:Using a fixed IV without changing across sessions}
+{Vulnerable:No,Name of vulnerability:Padding oracle attacks}
+{Vulnerable:No,Name of vulnerability:Unaligned input handling}
+{Vulnerable:No,Name of vulnerability:Bad padding handling}
+{Vulnerable:No,Name of vulnerability:Unwrap with bad padding}
+{Vulnerable:No,Name of vulnerability:Unwrap with unaligned input}
+{Vulnerable:No,Name of vulnerability:Block size consistency across providers}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesCbcIso10126Test.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of static IV in CBC mode}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesCbcNistTest.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Use of ECB Mode
+Yes,Incomplete Padding Check
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesCbcSpi.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Cipher initialization without proper error handling
+Yes,Use of predictable IV
+Yes,Lack of exception handling for doFinal
+Yes,Improper error handling in catch blocks
+Yes,Excessive use of static imports in tests
+Yes,Plaintext generation lacks security considerations
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesCbcTest.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Reuse of IV in GCM mode}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesGcm.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Key Reuse in GCM}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesGcmBase.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesGcmKatTest.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,HardcodedEncryptionParameters
+Yes,ProviderSelectionFlexibility
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesGcmOneShot.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Native Code Interaction}
+{Vulnerable:Yes,Name of vulnerability:Context Handling}
+{Vulnerable:Yes,Name of vulnerability:IV Reuse with Same Key}
+{Vulnerable:No,Name of vulnerability:Buffer Overflows}
+{Vulnerable:No,Name of vulnerability:Improper Input Validation}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesGcmSpi.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesGcmUpdate.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Randomness}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesGcmVsKwp.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AESGenerativeTest.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesKeyWrapPaddingSpi.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesKeyWrapPaddingTest.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesKwp.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Cipher with NoPadding}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesKwpKatTest.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesXts.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:HardcodedCryptographicAlgorithm}
+{Vulnerabl:Yes,Name of vulnerability:InsecureRandomNumberGenerator}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesXtsBenchmark.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Key Reuse}
+{Vulnerabl:Yes,Name of vulnerability:Output Clobbering}
+{Vulnerabl:No,Name of vulnerability:No Padding Support Issue}
+{Vulnerabl:Yes,Name of vulnerability:UnsupportedOperation}
+{Vulnerabl:Yes,Name of vulnerability:Native Method Security}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesXtsSpi.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AesXtsTest.java
+"```csv
+Vulnerable,Name of vulnerability
+Yes,Usage of MD5
+Yes,Usage of SHA1
+Yes,Hard-coded algorithm names
+Yes,Poor error handling
+Yes,Fallback on reflection
+Yes,Logging of sensitive information
+No,
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_AmazonCorrettoCryptoProvider.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Random Number Generation}
+{Vulnerable:Yes,Name of vulnerability:IV Reuse in GCM Mode}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_CipherReuse.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_CMakeLists.java
+"```csv
+Vulnerabl,Name of vulnerability
+No,N/A
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_ConcatenationKdfSpi.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_ConcatenationKdfTest.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Native Method Usage}
+{Vulnerabl:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_CounterKdfSpi.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_CounterKdfTest.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Cryptographic Keys}
+{Vulnerabl:Yes,Name of vulnerability:Use of Weak Cryptographic Algorithms}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_EvpHmac.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:UnsupportedOperationException leads to Denial of Service}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\corretto_amazon-corretto-crypto-provider_KdfSpi.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Key}
+{Vulnerabl:Yes,Name of vulnerability:ECB Mode Usage}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\ffffffff0x_BerylEnigma_AESImpl.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Use of ECB mode
+```
+"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\ffffffff0x_BerylEnigma_BlockCipherImpl.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of hard-coded cryptographic keys}
+{Vulnerable:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\ffffffff0x_BerylEnigma_HMACImpl.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Overridable Java Security Properties
+Yes,Weak Cryptographic Algorithms
+Yes,DNS Spoofing Risk
+Yes,Policy File Injection
+Yes,Symantec CA Distrust Policy
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\ffffffff0x_BerylEnigma_java.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Key length check flaw}
+{Vulnerabl:Yes,Name of vulnerability:Base64 padding handling}
+{Vulnerabl:Yes,Name of vulnerability:Improper use of Base64 library}
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\ffffffff0x_BerylEnigma_JWTImpl.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Insufficient Logging}
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB Mode}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\ffffffff0x_BerylEnigma_symmetricAlgTest.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Cipher Mode}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Key}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded IV}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\ffffffff0x_BerylEnigma_symmetricEncryption.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Weak Key Generation}
+{Vulnerabl:Yes,Name of vulnerability:Weak Nonce Generation}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AeadCipherTest.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Weak Encryption Key Size}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParameterAsymmetricHelper.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Weak Key Size}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParameterKeyAgreementHelper.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParametersTestAES.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of DES}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParametersTestDES.java
+"```csv
+Vulnerability,Name of vulnerability
+No,N/A
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParametersTestDESede.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParametersTestDH.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParametersTestGCM.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParametersTestOAEP.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Sensitive Data}
+{Vulnerabl:Yes,Name of vulnerability:Improper Block Mode Usage}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_AlgorithmParameterSymmetricHelper.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Sensitive Data}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_CipherAsymmetricCryptHelper.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_CipherBasicsTest.java
+"```csv
+{Vulnerable:No,Name of vulnerability:None}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_CipherEncryptBenchmark.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:UnvalidatedInputToCipher}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_CipherFactory.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:AlgorithmNameInputValidation}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_CipherHelper.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Improper Error Handling}
+{Vulnerable:Yes,Name of vulnerability:Potential Memory Leak}
+{Vulnerable:Yes,Name of vulnerability:Lack of Session Expiration}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_ConscryptEngine.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Improper SSL handshake error handling}
+{Vulnerable:Yes,Name of vulnerability:Potential resource leak if close method isn't handled correctly}
+{Vulnerable:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_ConscryptFileDescriptorSocket.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_ConscryptOpenJdkSuite.java
+"```
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_CryptoUpcalls.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Weak Cryptographic Algorithm}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_DESEDESecretKeyFactory.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Reflection-based Invocation}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_DuckTypedPSKKeyManager.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_DuckTypedPSKKeyManagerTest.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_ECDHKeyAgreementTest.java
+"```
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_GCMParameters.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_Hkdf.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_HkdfTest.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Improper Error Handling
+Yes,Insufficient Key Length
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLBaseDHKeyAgreement.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:NullPointerException}
+{Vulnerabl:Yes,Name of vulnerability:UnsupportedOperationException}
+{Vulnerabl:Yes,Name of vulnerability:InvalidParameterException}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLCipher.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of insecure random number generator}
+{Vulnerabl:Yes,Name of vulnerability:Potential IV reuse}
+{Vulnerabl:No,Name of vulnerability}
+{Vulnerabl:No,Name of vulnerability}
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLCipherChaCha20.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Padding Oracle Attack}
+{Vulnerable:No,Name of vulnerability:None}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLCipherRSA.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Potential null pointer dereference}
+{Vulnerable:Yes,Name of vulnerability:IV misuse in Cipher initialization}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLEvpCipher.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB mode}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLEvpCipherAES.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Weak Cryptographic Algorithm (ARC4)}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLEvpCipherARC4.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLEvpCipherDESEDE.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Weak Hash Function (HmacMD5)}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLMac.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Native Resource Management}
+{Vulnerable:Yes,Name of vulnerability:Certificate Expiration Handling}
+{Vulnerable:Yes,Name of vulnerability:Missing Override Annotation}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLX509Certificate.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Use of finalize method
+Yes,Potential null pointer dereference
+No,
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_OpenSSLX509CRL.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Reflection - Excessive Permissions}
+{Vulnerable:Yes,Name of vulnerability:Potential Information Disclosure}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Configuration - Insecure Defaults}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_Platform.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:PSK Identity and Hint Transmitted in Cleartext}
+{Vulnerabl:Yes,Name of vulnerability:Deprecated and Compatibility Issues with TLS 1.3}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_PSKKeyManager.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of reflection}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_PSKKeyManagerProxy.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Reflection Abuse}
+{Vulnerabl:Yes,Name of vulnerability:Improper Handling of Sensitive Information}
+{Vulnerabl:Yes,Name of vulnerability:Potential Denial of Service}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_ScryptSecretKeyFactory.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Insecure Cipher - ECB Mode}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_ScryptTest.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_ShortBufferWithoutStackTraceException.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Lack of Input Validation}
+{Vulnerabl:Yes,Name of vulnerability:Improper Exception Handling}
+{Vulnerabl:Yes,Name of vulnerability:Unrestricted Cipher Suite Usage}
+{Vulnerabl:Yes,Name of vulnerability:Usage of Hardcoded Cryptographic Key}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_SSLEngineTest.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Missing Hostname Verification}
+{Vulnerabl:Yes,Name of vulnerability:Insecure Protocols}
+{Vulnerabl:Yes,Name of vulnerability:Default Trust Manager Usage}
+{Vulnerabl:Yes,Name of vulnerability:TLS 1.3 Cipher Suites Customization Omission }
+{Vulnerabl:No,Name of vulnerability:Session Fixation}
+{Vulnerabl:No,Name of vulnerability:Circular Trust Dependency}
+{Vulnerabl:No,Name of vulnerability:Error Handling in Security Configuration}
+{Vulnerabl:No,Name of vulnerability:PSK Key Management Exposure}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_SSLParametersImpl.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Key Size}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Password}
+{Vulnerable:Yes,Name of vulnerability:Self-signed Certificate Usage}
+{Vulnerable:Yes,Name of vulnerability:Poor Error Handling}
+{Vulnerable:Yes,Name of vulnerability:Weak DH Parameters}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_TestKeyStore.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Usage of ECB mode for AES (AES_ECB_PKCS5)}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_Transformation.java
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_X25519KeyAgreementTest.java
+"```csv
+Vulnerabl,Name of vulnerability
+No,
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_XDHKeyAgreementTest.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\google_conscrypt_XdhKeyFactoryTest.java
+"```csv
+Vulnerabl,Name of vulnerability
+Yes,Hardcoded Cryptographic Key
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\iamMehedi_Secured-Preference-Store_ApplicationTest.java
+"```csv
+{Vulnerability:Yes,Name of vulnerability:ECB Mode Encryption}
+{Vulnerability:Yes,Name of vulnerability:Insecure Random}
+{Vulnerability:Yes,Name of vulnerability:No Integrity Check for Encrypted Files}
+{Vulnerability:Yes,Name of vulnerability:RSA Encryption without OAEP}
+{Vulnerability:Yes,Name of vulnerability:Hardcoded Cryptographic Constants}
+{Vulnerability:Yes,Name of vulnerability:Deprecated SSL Provider}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\iamMehedi_Secured-Preference-Store_EncryptionManager.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Algorithm}
+{Vulnerabl:Yes,Name of vulnerability:Null Salt Check}
+{Vulnerabl:Yes,Name of vulnerability:UnsupportedOperationException in check Method}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\Password4j_password4j_PBKDF2Function.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Deprecated Encryption}
+{Vulnerable:Yes,Name of vulnerability:Weak Integrity Verification}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\patrickfav_armadillo_AesCbcEncryption.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:HardcodedAlgorithmParameters}
+{Vulnerable:Yes,Name of vulnerability:WeakThreadLocalCipherHandling}
+{Vulnerable:Yes,Name of vulnerability:InsufficientKeyLengthCheck}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\patrickfav_armadillo_AesGcmEncryption.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of SHA-1}
+{Vulnerabl:Yes,Name of vulnerability:Insufficient Iterations}
+```"C:\Users\ef28\Desktop\JCA\Java Files\Cryptography\GitHub files\patrickfav_armadillo_PBKDF2KeyStretcher.java
