@@ -3,7 +3,7 @@
 ## 📂 Folder Overview  
 
 ### `Benchmark_Results/`  
-- ChatGPT detection results with and without prompt engineering for detection of cryptography misuses in **CryptoAPIBench** and **CAMBench**  
+- ChatGPT detection results with and without prompt engineering for detection of cryptography misuses in **CryptoAPIBench** and **CAMBench** benchmarks 
 
 ### `Prompts/`  
 - The prompts used for detection tasks  
