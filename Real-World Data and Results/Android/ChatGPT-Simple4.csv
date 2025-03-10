@@ -1,0 +1,77 @@
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Cipher Mode}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded IV Key}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.abiod.rccgmobileworld-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of AES/CBC/NoPadding}
+{Vulnerabl:Yes,Name of vulnerability:No Exception Handling for Empty String in Decryption}
+{Vulnerabl:Yes,Name of vulnerability:Potential Padding Oracle Vulnerability}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.accessorieshub.app-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Cipher Mode NoPadding}
+{Vulnerable:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerable:Yes,Name of vulnerability:Potential Information Leakage through Exception Message}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.acs.biyunavi-a.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Static IV}
+{Vulnerabl:Yes,Name of vulnerability:No Padding}
+{Vulnerabl:Yes,Name of vulnerability:No Exception Handling in Decryption}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.acua.moderntechnology-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Static IV}
+{Vulnerable:Yes,Name of vulnerability:No Padding Scheme}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Cipher Configuration}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+{Vulnerable:Yes,Name of vulnerability:Potential Null Pointer Dereference}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.adach.tech-a.java
+"```csv
+{Vulnerable: Yes, Name of vulnerability: Static IV}
+{Vulnerable: Yes, Name of vulnerability: Padding Oracle}
+{Vulnerable: Yes, Name of vulnerability: Insecure Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.akinfotools.application-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of ECB Mode}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Cryptographic Keys}
+{Vulnerable:Yes,Name of vulnerability:Insufficient Error Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.aktaxi.driver-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Fixed IV}
+{Vulnerable:Yes,Name of vulnerability:Use of NoPadding}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.aktaxi.riderapp-a.java
+"```csv
+Vulnerable,Name of vulnerability
+No,
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-ARIA.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Broken or Risky Cryptographic Algorithm}
+{Vulnerable:Yes,Name of vulnerability:Key Management Issues}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-BcKeyStoreSpi.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of Hard-Coded Cryptographic Key}
+{Vulnerabl:Yes,Name of vulnerability:Missing Secure Random Initialization}
+{Vulnerabl:No,Name of vulnerability:}
+{Vulnerabl:No,Name of vulnerability:}
+{Vulnerabl:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-Camellia.java
+"```csv
+Vulnerability,Name of vulnerability
+Yes,Use of fixed-size IV
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-CAST5.java
+"```
+{Vulnerable:Yes,Name of vulnerability:Use of DES algorithm}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-DES.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Weak Cryptographic Algorithm - DESede}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-DESede.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Predictable Randomness}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Configuration}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-IDEA.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:InsufficientExceptionHandling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-Noekeon.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\4\com.al.dlnaserver-PKCS12KeyStoreSpi.java

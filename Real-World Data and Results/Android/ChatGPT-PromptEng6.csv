@@ -1,0 +1,95 @@
+"```csv
+{a.java, IvParameterSpec, 12, Use of static IV insecure, Use of static IV insecure, Use a random or dynamically generated IV, Not Checked, 95%}
+{a.java, SecretKeySpec, 13, Use of key directly from string bytes without proper encoding, Use of key directly from string bytes without proper encoding, Use proper encoding and key derivation functions like PBKDF2, Not Checked, 95%}
+{a.java, Cipher, 15, Static cipher settings, Static cipher settings, Consider using secure configurations and handling dynamically, Not Checked, 90%}
+{a.java, Cipher.init, 26, Lack of IV randomness and key handling checks, Lack of IV randomness and key handling checks, Use secure handling of IV and keys, Not Checked, 95%}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.app.swachhbhumipune-a.java"
+"```csv
+{a.java, IvParameterSpec, 13, None, None, None, No, 100%}
+{a.java, SecretKeySpec, 14, Weak key derivation from string without adequate processing, Weak key derivation from string without adequate processing, Use a securely generated key, No, 95%}
+{a.java, Cipher, 16, Insecure cipher mode (NoPadding), Insecure cipher mode (NoPadding), Use a secure mode like AES/GCM/NoPadding, No, 90%}
+{a.java, Cipher, 33, Cannonical code doesn't consider padding removal securely, Cannonical code doesn't consider padding removal securely, Use a secure mode like AES/GCM/NoPadding, No, 85%}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.app.swatisingh6342-a.java"
+"```
+{a.java, Cipher, 14, Use of insecure padding ""NoPadding"", Yes, AES/GCM/NoPadding, No, 90}
+{a.java, IvParameterSpec, 11, Static IV, Yes, Use a random IV for encryption, No, 85}
+{a.java, SecretKeySpec, 12, Use of default character encoding which can lead to inconsistent keys, Yes, Use a specific Charset like UTF-8, No, 80}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.appmarketpro.vincheckpro2-a.java"
+"```csv
+{com.appmarketpro.writeappreviews.a.java, IvParameterSpec, 12, , , , Yes, 90}
+{com.appmarketpro.writeappreviews.a.java, SecretKeySpec, 13, Fixed size key from string, Fixed size key from string, Use a secret key derivation function to generate key, Yes, 90}
+{com.appmarketpro.writeappreviews.a.java, Cipher, 15, Insecure cipher mode with ""AES/CBC/NoPadding"", Insecure cipher mode with ""AES/CBC/NoPadding"", Use AES/GCM/NoPadding for confidentiality and integrity, Yes, 90}
+{com.appmarketpro.writeappreviews.a.java, Cipher, 26, Unchecked `init` parameters can lead to exceptions/crashes, Unchecked `init` parameters can lead to exceptions/crashes, Validate parameters before `init`, Yes, 85}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.appmarketpro.writeappreviews-a.java"
+"```csv
+{a.java, Cipher, 17, Using AES/CBC/NoPadding without proper padding scheme, Using AES/CBC/NoPadding without proper padding scheme, AES/CBC/PKCS5Padding, Not executed from Main Method, 90}
+{a.java, IvParameterSpec, 13, No misuse, No misuse, N/A, Not executed from Main Method, 100}
+{a.java, SecretKeySpec, 14, No misuse, No misuse, N/A, Not executed from Main Method, 100}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.apurranna.utshoitsltd-a.java"
+"```csv
+{a.java, Cipher.getInstance, 17, Uses AES with NoPadding, Uses AES with NoPadding, Use AES/CBC/PKCS5Padding or similar, No, 95}
+{a.java, Cipher.init, 31, None identified in this path, None identified in this path, Correct usage per provided context, No, 85}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.arba.web2apk-a.java"
+"```csv
+{a.java, Cipher.getInstance, 21, Weak cipher mode (NoPadding), Weak cipher mode (NoPadding), AES/CBC/PKCS5Padding, Not executed from main, 95}
+{a.java, Cipher.init, 35, None, None, None, Not executed from main, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.arivinnilav.safuvan_saqafi-a.java"
+"```csv
+{a.java, IvParameterSpec, 10, None, None, N/A, No, 100}
+{a.java, SecretKeySpec, 11, None, None, N/A, No, 100}
+{a.java, Cipher.getInstance, 13, AES/CBC/NoPadding is insecure, AES/CBC/NoPadding is insecure, Use AES/GCM/NoPadding, No, 100}
+{a.java, Cipher.init, 27, Static key and IV, Improper key and IV management, Use random key and IV per encryption, No, 100}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.art.website2apk-a.java"
+"```csv
+{a.java, javax.crypto.Cipher, 16, Use of AES/CBC/NoPadding is insecure without padding, Yes, AES/GCM/NoPadding, No, 90}
+{a.java, javax.crypto.IvParameterSpec, 11, Static IV vulnerable to replay attacks if reused, Yes, Random IV for each operation, No, 95}
+{a.java, javax.crypto.SecretKeySpec, 12, Hardcoded secret key usage should be avoided, Yes, Use a key management system, No, 95}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.buddy.game-a.java"
+"```csv
+{a.java, Cipher.getInstance, 18, NoPadding used with AES/CBC, Yes, Use AES/CBC/PKCS5Padding, Class not instantiated from the main method, 95}
+{a.java, Cipher.init, 35, Proper error handling missing, Yes, Add proper error handling, Class not instantiated from the main method, 90}
+{a.java, IvParameterSpec, 13, None, No, N/A, Class not instantiated from the main method, 100}
+{a.java, SecretKeySpec, 14, None, No, N/A, Class not instantiated from the main method, 100}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.cab.culture-a.java"
+"```csv
+{a.java, Cipher.getInstance, 21, Insecure Cipher Mode (NoPadding), Insecure Cipher Mode (NoPadding), Use ""AES/CBC/PKCS5Padding"", No, 95}
+{a.java, IvParameterSpec, 12, Static IV from User Input, Static IV from User Input, Use SecureRandom to generate IV, No, 90}
+{a.java, SecretKeySpec, 13, Static Secret Key from User Input, Static Secret Key from User Input, Use Key Derivation Function (KDF) like PBKDF2, No, 90}
+{a.java, Cipher.init, 34, Potentially Incorrect Mode for Decryption, Potentially Incorrect Mode for Decryption, Ensure correct mode matching the encryption operation, No, 85}
+```
+C:\Users\ef28\Desktop\Android Test Set\Files\6\com.cabinetcelestecom.cedis-a.java"
+"```csv
+{ae.java, Cipher.getInstance, 19, ECB mode is insecure, ECB mode is insecure, Use GCM or CBC with a random IV, Yes, 95%}
+{ae.java, Cipher.getInstance, 20, None, None, N/A, Yes, 95%}
+{ae.java, Cipher.getInstance, 21, None, None, N/A, Yes, 95%}
+{ae.java, SecretKeySpec, 37, None, None, N/A, Yes, 95%}
+{ae.java, MessageDigest.getInstance, 59, None, None, N/A, Yes, 95%}
+```
+
+- **Cipher Initialization (Line 19, 20, 21)**: The `Cipher` instance on line 19 uses ""AES/ECB/PKCS5Padding"", which is insecure due to ECB mode. Lines 20 and 21 use ""AES/CBC/PKCS5Padding"", which is more secure, but care must be taken to use a random IV for each encryption operation.
+- **SecretKeySpec Initialization (Line 37)** and **MessageDigest Usage (Line 59)**: No apparent misuse, but ensure key management practices are secure.
+- **Secure Alternative for ECB**: Replace with a mode like CBC with a random IV or a mode like GCM.
+- **Execution from Main**: The initial conditions determine calls from the constructor to the `a()` method, indicating these cryptographic operations are reachable from main execution paths.
+- **Confidence Level**: High confidence (95%) due to the clarity of encryption mode stated directly in the code.
+C:\Users\ef28\Desktop\Android Test Set\Files\6\com.camerafreezetime.specialeffectscamera-ae.java"
+"```csv
+{Basic.java, javax.crypto.Cipher, 29, Use of PBEWithMD5AndDES which is weak, Use of PBEWithMD5AndDES which is weak, Consider using AES/GCM/NoPadding or AES/CBC/PKCS5Padding, Yes, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.Basic-Basic.java"
+"```csv
+{Basic.java, Cipher, 683 & 1850, None, None, Use AES/GCM/NoPadding or similar, Yes if executed from createForAPK, 90}
+{Basic.java, CipherInputStream, 683, None, None, Secure if used with AES in CTR or GCM mode, Yes if executed from createForAPK, 90}
+{Basic.java, SecretKey, 1934, MD5 for key derivation, MD5 for key derivation, Use PBKDF2 with SHA-256, Yes if executed from createForAPK, 95}
+{Basic.java, SecretKeyFactory, 1934, MD5 for key derivation, MD5 for key derivation, Use PBKDF2 with SHA-256, Yes if executed from createForAPK, 95}
+{Basic.java, PBEKeySpec, 1934, MD5 for key derivation, MD5 for key derivation, Use PBKDF2 with SHA-256, Yes if executed from createForAPK, 95}
+{Basic.java, PBEParameterSpec, 1935, MD5 for key derivation, MD5 for key derivation, Use PBKDF2 with SHA-256, Yes if executed from createForAPK, 95}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.BASICLauncher-Basic.java"
+"```csv
+Basic.java, Cipher,615, None, None, Use AES with a robust key management, Yes, 85
+Basic.java, PBEWithMD5AndDES,619, Weak algorithm (MD5), Weak algorithm (MD5), Use PBKDF2 with SHA-256, Yes, 90
+Basic.java, PBEKeySpec,618, Key length not specified, Key length not specified, Specify a key length (e.g., 256 bits), Yes, 75
+Basic.java, PBEParameterSpec,620, Static (hardcoded) salt, Static (hardcoded) salt, Use a random and unique salt, Yes, 80
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.cuckooclock-Basic.java"
+"```csv
+{Basic.java, javax.crypto.Cipher, 222, Using ECB mode for encryption/decryption is unsafe, Yes, Consider using AES/GCM/NoPadding, Yes, 80}
+{Basic.java, javax.crypto.SecretKeyFactory, 229, Static SALT is used for encryption, Yes, Use a random or user-specific SALT, Yes, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.dualview-Basic.java"

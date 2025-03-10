@@ -1,0 +1,93 @@
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of NoPadding in AES}
+{Vulnerabl:Yes,Name of vulnerability:Potential NullPointerException}
+{Vulnerabl:Yes,Name of vulnerability:Improper Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.app.swachhbhumipune-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Used in Cipher}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.app.swatisingh6342-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of static IV}
+{Vulnerable:Yes,Name of vulnerability:Use of NoPadding in AES}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.appmarketpro.vincheckpro2-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of AES/CBC/NoPadding}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded secret key}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded IV}
+{Vulnerabl:Yes,Name of vulnerability:Improper error handling in encryption/decryption}
+{Vulnerabl:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.appmarketpro.writeappreviews-a.java
+"```plaintext
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Usage}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.apurranna.utshoitsltd-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Encryption Parameters}
+{Vulnerable:Yes,Name of vulnerability:No Padding Error Handling}
+{Vulnerable:Yes,Name of vulnerability:No Input Validation and Sanitization}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.arba.web2apk-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerabl:Yes,Name of vulnerability:No Padding Scheme}
+{Vulnerabl:Yes,Name of vulnerability:Weak Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.arivinnilav.safuvan_saqafi-a.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerabl:Yes,Name of vulnerability:Weak Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.art.website2apk-a.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Encryption Keys}
+{Vulnerabl:Yes,Name of vulnerability:AES/CBC/NoPadding Usage}
+{Vulnerabl:Yes,Name of vulnerability:Error Handling Information Leak}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.buddy.game-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerabl:Yes,Name of vulnerability:Insecure Padding Scheme}
+{Vulnerabl:Yes,Name of vulnerability:Potential Null Pointer Dereference}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.cab.culture-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Key}
+{Vulnerabl:Yes,Name of vulnerability:No Padding}
+{Vulnerabl:Yes,Name of vulnerability:Improper Error Handling}
+{Vulnerabl:Yes,Name of vulnerability:Insufficient Input Validation}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.cabinetcelestecom.cedis-a.java
+"```
+{Vulnerable:Yes,Name of vulnerability:ECB Mode Encyption}
+{Vulnerable:Yes,Name of vulnerability:Constant IV}
+{Vulnerable:No,Name of vulnerability:None}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.camerafreezetime.specialeffectscamera-ae.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Encryption Salt}
+{Vulnerable:Yes,Name of vulnerability:Potential Path Traversal}
+{Vulnerable:Yes,Name of vulnerability:Lack of Input Validation}
+{Vulnerable:Yes,Name of vulnerability:Sensitive Data in Logs}
+{Vulnerable:Yes,Name of vulnerability:Improper Storage of Sensitive Data}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.Basic-Basic.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Improper Storage of Permissions}
+{Vulnerabl:Yes,Name of vulnerability:Potential IAM Misconfigurations}
+{Vulnerabl:Yes,Name of vulnerability:Weak Encryption}
+{Vulnerabl:Yes,Name of vulnerability:Insecure File Handling}
+{Vulnerabl:Yes,Name of vulnerability:Potential Race Condition}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Sensitive Information}
+{Vulnerabl:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.BASICLauncher-Basic.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Lack of Input Validation}
+{Vulnerabl:Yes,Name of vulnerability:Potential Path Traversal}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Encryption Details}
+{Vulnerabl:Yes,Name of vulnerability:Use of `getCanonicalPath` Without Validation}
+{Vulnerabl:Yes,Name of vulnerability:Insecure Randomness}
+{Vulnerabl:Yes,Name of vulnerability:Improper Use of Cryptography}
+{Vulnerabl:Yes,Name of vulnerability:Logging Sensitive Information}
+{Vulnerabl:Yes,Name of vulnerability:Potential OOM due to Uncontrolled Loops}
+{Vulnerabl:Yes,Name of vulnerability:Security Misconfiguration}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.cuckooclock-Basic.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:SD Card Path Exposure}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Security Key}
+{Vulnerable:Yes,Name of vulnerability:Improper Credential Management}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\6\com.rfo.dualview-Basic.java

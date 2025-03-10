@@ -1,0 +1,70 @@
+"```csv
+{a.java, Cipher, 17, Using ""AES/CBC/NoPadding"" which is insecure due to lack of padding, Executed with potential risk of padding oracle attacks, Use ""AES/CBC/PKCS5Padding"" instead, Not explicitly executed from main but part of a class constructor, 85}
+{a.java, Cipher.init, 31, Initialization with user-supplied IV is insecure if IV is predictable, Session-specific IV should be random and unpredictable, Use SecureRandom to generate IV, Yes if initialization is called from another executed path, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aamra.korbo.joy-a.java"
+"```csv
+{ahj.java, Cipher, 17, None, None, N/A, No, 90}
+{ahj.java, Cipher.getInstance, 20, Hardcoded Cipher Scheme, Possible if condition met, N/A, No, 90}
+{ahj.java, a().init(1, secretKeySpec, (SecureRandom) null), 37, Null SecureRandom Parameter, Always, Use new SecureRandom(), No, 95}
+{ahj.java, SecretKeySpec, 35, None, None, N/A, No, 90}
+{ahj.java, SecretKeySpec, 81, None, None, N/A, No, 90}
+{ahj.java, a().init(2, secretKeySpec, new IvParameterSpec(bArr2)), 83, None, None, N/A, No, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-ahj.java"
+"```csv
+com.google.android.gms.internal.ads.yy.java, Cipher, 9, None, None, Proper configuration and use of Cipher with secure parameters recommended, No, 95%
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-yy.java"
+"```csv
+{zb.java, KeyPairGenerator.getInstance,7, Potential misuse if weak algorithms are used, Potential misuse if weak algorithms are used, Use strong algorithms like RSA with proper key sizes, No, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-zb.java"
+"```csv
+{zc.java, Mac, 9, No explicit misuse, No explicit misuse, Ensure secure algorithm (e.g., HmacSHA256) and validate inputs, No, 80%}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-zc.java"
+"```csv
+{zd.java, MessageDigest, 10, None, None, Use appropriate algorithm parameters, No, 95}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-zd.java"
+"```csv
+{ze.java, Signature, 9, None, None, N/A, No, 95}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-ze.java"
+"```csv
+{yy.java, Cipher, 9, Using default Cryptographic provider, Using default Cryptographic provider, Specify a provider or validate chosen provider, Yes, 90%}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abbb.parkpolucecar.nofalsenewapp-yy.java"
+"```csv
+{com.google.android.gms.internal.ads.yz, KeyAgreement, 10, None, None, N/A, No, 95}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abbb.parkpolucecar.nofalsenewapp-yz.java"
+"```csv
+{za.java, KeyFactory.getInstance, 8, None, None, N/A, No, 95}
+{za.java, KeyFactory.getInstance, 8, None, None, N/A, No, 95}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abbb.parkpolucecar.nofalsenewapp-za.java"
+"```csv
+{sz.java, Cipher, 48, Usage of `Cipher.getInstance` with a static string can be unsafe if manipulated, Potential misuse if the algorithm string is externally influenced, Consider using a constant or validated input for `Cipher.getInstance`, Not directly shown but likely given no control flow around it, 95}
+{sz.java, SecretKeySpec, 47, Hardcoding keys like in `SecretKeySpec` can be risky, Potential misuse if key management is insecure, Implement a secure key management strategy, Not directly shown but likely given no control flow around it, 90}
+{sz.java, SecureRandom, 11, SecureRandom should be properly seeded, No misuse detected since not enough detail on seed handling, Ensure `SecureRandom` is properly seeded if not already done by default, Yes, if accessed via initial object creation, 85}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.dualexplorer-sz.java"
+"```csv
+{sz.java, Cipher, 50, Use of static IV for AES which can lead to vulnerabilities, Use of static IV for AES which can lead to vulnerabilities, Use a securely generated random IV for each encryption operation, ?, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.iconbar-sz.java"
+"```csv
+{sz.java, SecureRandom, 9, None, None, N/A, No, 95%}
+{sz.java, SecretKeySpec, 44, None, None, N/A, No, 95%}
+{sz.java, Cipher, 45, Hardcoded algorithm/mode/padding, Hardcoded algorithm/mode/padding, Use configurable cryptographic parameters, No, 90%}
+{sz.java, IvParameterSpec, 46, Potential predictable IV, Potential predictable IV, Use random IVs generated securely, No, 90%}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.koabacus-sz.java"
+"```csv
+{sz.java, SecureRandom, 12, None, None, None, No, 100%}
+{sz.java, Cipher, 45, Potential insecure random IV, Insecure decrypting when bArr2 predictable, Use a securely generated random IV, No, 95%}
+{sz.java, SecretKeySpec, 42, None, None, None, No, 100%}
+```
+C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.lotto-sz.java"
+"```csv
+{com/google/android/gms/internal/o.java, SecureRandom, 17, , , Use a securely configured random source if needed, Not directly executed, 90%}
+{com/google/android/gms/internal/o.java, Cipher, 56, Hardcoded ""AES/CBC/PKCS5Padding"" mode, Potential padding oracle attack if misused, Use AES/GCM/NoPadding for authenticated encryption, Possible through method invocation, 95%}
+{com/google/android/gms/internal/o.java, SecretKeySpec, 55, Static key length validation, Static key management issues, Ensure dynamic key management with key derivation, Not directly executed, 85%}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.magichangul-o.java"
+"```csv
+{a.java, Cipher, 16, Use of ""NoPadding"" mode which may lead to vulnerabilities, Same as all paths, Consider using ""AES/CBC/PKCS5Padding"", no, 95}
+{a.java, IvParameterSpec, 10, Hardcoded IV value from string input, Same as all paths, Use a secure random IV, no, 90}
+{a.java, SecretKeySpec, 11, Hardcoded key from string input, Same as all paths, Derive key from a secure key derivation function, no, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\academy.marius.leontiuc-a.java"
+"```csv
+{Ohzylmnvkajcbrdxw.java, javax.crypto.Cipher, 171, Weak encryption algorithm - ECB mode used, Weak encryption algorithm - ECB mode used, Use a stronger mode like GCM or CBC with IV, Not confirmed, 90}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\ajt274.psovdxoieon274.kgjvbqpsss274-Ohzylmnvkajcbrdxw.java"

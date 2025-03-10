@@ -1,0 +1,101 @@
+"```csv
+{Vulnerable:Yes,Name of vulnerability:WeakCryptographyNoPadding}
+{Vulnerable:Yes,Name of vulnerability:StaticKeyAndIV}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\akubisakerja.ujian.apps-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Static IV in Encryption}
+{Vulnerable:Yes,Name of vulnerability:Sensitive Data Exposure}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\all.air.ts-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static IV and Static Key}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Vulnerability}
+{Vulnerabl:Yes,Name of vulnerability:Improper Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\all.networks.pk-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded IV}
+{Vulnerabl:Yes,Name of vulnerability:SecureRandom not initialized}
+{Vulnerabl:Yes,Name of vulnerability:Use of static XOR for data obfuscation}
+{Vulnerabl:Yes,Name of vulnerability:No integrity check on decrypted data}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\analogclocklivewallpaper.analogclock-n.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Static Initialization Vector (IV) and Key}
+{Vulnerable:Yes,Name of vulnerability:No Padding in AES}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\apk.slotonline.heru-a.java
+"```csv
+{Vulnerability:Yes,Name of vulnerability:Use of insecure cipher mode (NoPadding)}
+{Vulnerability:Yes,Name of vulnerability:Insecure key/IV management (static IV)}
+{Vulnerability:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.carilo.com-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:InsecureCipherMode}
+{Vulnerabl:Yes,Name of vulnerability:InsufficientKeySize}
+{Vulnerabl:Yes,Name of vulnerability:ImproperErrorHandling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.chat.ficom-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Static IV}
+{Vulnerable:Yes,Name of vulnerability:NoPadding Usage}
+{Vulnerable:Yes,Name of vulnerability:Improper Key Handling}
+{Vulnerable:Yes,Name of vulnerability:Exception Handling and Disclosure}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.chat.first1-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Encryption Variables}
+{Vulnerable:Yes,Name of vulnerability:No Padding Scheme}
+{Vulnerable:Yes,Name of vulnerability:Potential NullPointerException}
+{Vulnerable:No,Name of vulnerability:}
+{Vulnerable:Yes,Name of vulnerability:Improper Error Handling}
+{Vulnerable:Yes,Name of vulnerability:Weak Decryption Method}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.mivzaklive.news-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Cryptographic Parameters}
+{Vulnerable:Yes,Name of vulnerability:Weak Encryption Mode}
+{Vulnerable:No,Name of vulnerability:Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.net.blueworldcosmetics-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Usage}
+{Vulnerabl:Yes,Name of vulnerability:Exception Handling Information Leakage}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Cryptographic Keys}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.ng.katlego-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Static IV}
+{Vulnerable:Yes,Name of vulnerability:NoPadding Usage}
+{Vulnerable:Yes,Name of vulnerability:Exception Handling}
+{Vulnerable:Yes,Name of vulnerability:Static Key}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.remesas.vzla-a.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Encryption Key}
+{Vulnerabl:Yes,Name of vulnerability:Cipher Initialization Without Padding Check}
+{Vulnerabl:Yes,Name of vulnerability:Exception Details Exposure}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.restaurantenaweb.delivery-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Used}
+{Vulnerabl:Yes,Name of vulnerability:Insecure Key Handling}
+{Vulnerabl:Yes,Name of vulnerability:Insecure IV Handling}
+{Vulnerabl:Yes,Name of vulnerability:Potential Information Leak (Stack Trace)}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.s.jagoanssh_com-a.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Improper Padding Scheme}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Cryptographic Key}
+{Vulnerabl:Yes,Name of vulnerability:Weak Encryption Mode}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\area.client.daxportugal-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of NoPadding}
+{Vulnerable:Yes,Name of vulnerability:Static IV}
+{Vulnerable:Yes,Name of vulnerability:Weak Exception Handling}
+{Vulnerable:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\arpors.goyal.smemultinational-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static IV and Key}
+{Vulnerabl:Yes,Name of vulnerability:Cryptographic Padding Issue}
+{Vulnerabl:Yes,Name of vulnerability:Error Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\artebo.it.artisti-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of NoPadding}
+{Vulnerable:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerable:Yes,Name of vulnerability:Weak exception handling}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded keys}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\ascend.advisory.bizzsolutions-a.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB Mode}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\asia.mcproject.safelink-a.java

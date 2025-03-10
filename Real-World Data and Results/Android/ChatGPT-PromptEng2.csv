@@ -1,0 +1,100 @@
+"```csv
+{a.java, IvParameterSpec, 12, None, None, N/A, No, 95}
+{a.java, SecretKeySpec, 13, Weak Key Derivation, Weak Key Derivation, Use a secure key derivation function like PBKDF2, No, 90}
+{a.java, Cipher, 14, ""NoPadding Usage, Static IV"", ""NoPadding Usage, Static IV"", Use ""AES/CBC/PKCS5Padding"" and a random IV, No, 90}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\akubisakerja.ujian.apps-a.java
+"```csv
+all.air.ts.a.java, IvParameterSpec, 12, None, None, None, Yes, 100
+all.air.ts.a.java, SecretKeySpec, 13, None, None, None, Yes, 100
+all.air.ts.a.java, Cipher, 15, Use of NoPadding mode, Use of NoPadding mode, Use a padding scheme like PKCS5Padding, Yes, 100
+all.air.ts.a.java, Cipher.init, 28, Potential issues with AES key and IV sizes, Potential issues with AES key and IV sizes, Ensure key and IV sizes are correct, Yes, 90
+```
+"C:\Users\ef28\Desktop\Android Test Set\Files\2\all.air.ts-a.java
+"```csv
+{a.java, javax.crypto.Cipher, 17, ""NoPadding mode, static IV usage"", ""NoPadding mode, static IV usage"", ""Use 'AES/CBC/PKCS5Padding' and a random IV"", Uncertain, 90%}
+{a.java, javax.crypto.spec.IvParameterSpec, 13, ""Static IV derived from String input"", ""Static IV derived from String input"", ""Generate a random IV for each encryption"", Uncertain, 90%}
+{a.java, javax.crypto.spec.SecretKeySpec, 14, ""Potential weak key due to direct String conversion"", ""Potential weak key due to direct String conversion"", ""Use a key derivation function such as PBKDF2"", Uncertain, 85%}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\all.networks.pk-a.java
+"```csv
+{n.java, SecureRandom, 10, Not used for cryptographic operation, N/A, N/A, N/A, 100%}
+{n.java, Cipher, 49, Misuse of constant IV for decryption, Potential reuse of IV, Use unique IV per encryption session, Yes, 90%}
+{n.java, SecretKeySpec, 46, N/A, N/A, N/A, Yes, 100%}
+{n.java, IvParameterSpec, 49, N/A, Possible IV static assignment, Ensure IV is random/unique, Yes, 80%}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\analogclocklivewallpaper.analogclock-n.java
+"```csv
+{a.java, IvParameterSpec, 10, None, None, None, N/A, 100}
+{a.java, SecretKeySpec, 11, None, None, None, N/A, 100}
+{a.java, Cipher, 12, Use of 'AES/CBC/NoPadding' without proper padding mechanism, Use of 'AES/CBC/NoPadding' without proper padding mechanism, Consider using 'AES/CBC/PKCS5Padding' for proper padding, N/A, 100}
+{a.java, Cipher.init, 28, None, None, None, N/A, 100}
+{a.java, Cipher.doFinal, 29, None, None, Ensure handling of data size for 'NoPadding', N/A, 100}
+```
+"C:\Users\ef28\Desktop\Android Test Set\Files\2\apk.slotonline.heru-a.java
+"```csv
+{a.java, Cipher, 16, Use of ""AES/CBC/NoPadding"" which is a weak cipher transformation, Same as Misuses across All Code Paths, Use ""AES/CBC/PKCS5Padding"", No, 95%}
+{a.java, SecretKeySpec, 14, Secret key is derived directly from user input string bytes, Same as Misuses across All Code Paths, Use a secure key derivation function like PBKDF2, Yes, 90%}
+```
+"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.carilo.com-a.java
+"```csv
+CSV Format:{File Name, JCA API or Classe,line, Misuses across All Code Paths, Misuses in Executed Path, Secure Alternative if not secure, Executed from Main Method based on conditions?, Confidence Level(%)}
+
+{a.java, javax.crypto.Cipher, 15, Usage of ""AES/CBC/NoPadding"" mode, Usage of ""AES/CBC/NoPadding"" mode, ""AES/CBC/PKCS5Padding"", N/A, 95}
+{a.java, IvParameterSpec, 10, Static IV use, Static IV use, Generate a random IV per encryption, N/A, 95}
+{a.java, SecretKeySpec, 11, Using strings for keys and IVs, Using strings for keys and IVs, Use a securely generated key, N/A, 90}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.chat.ficom-a.java
+"```csv
+{a.java, Cipher.getInstance, 17, Use of 'NoPadding' mode, Use of 'NoPadding' mode, Use a padding mechanism like 'AES/CBC/PKCS5Padding', Yes, 95}
+{a.java, Cipher.init, 29, None, None, N/A, No, 90}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.chat.first1-a.java
+"```csv
+{app.mivzaklive.news.a.java, Cipher, 18, Use of AES with NoPadding can lead to insecure decryption due to padding oracle attacks, Use of AES with NoPadding can lead to insecure decryption due to padding oracle attacks, Use ""AES/CBC/PKCS5Padding"" for padding, No, 90}
+{app.mivzaklive.news.a.java, IvParameterSpec, 12, IV should be random and unique for each encryption, IV should be random and unique for each encryption, Use SecureRandom to generate a random IV, No, 85}
+{app.mivzaklive.news.a.java, SecretKeySpec, 13, Weak key derivation from user input, Weak key derivation from user input, Use a secure key derivation function (KDF) like PBKDF2, No, 80}
+{app.mivzaklive.news.a.java, Cipher.init, 31, Constant key and IV lead to predictable encryption, Constant key and IV lead to predictable encryption, Use fresh IV per encryption and secure KDF for key, No, 85}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.mivzaklive.news-a.java
+"```csv
+{a.java, Cipher.getInstance, 18, ""Use of ECB mode"", ""Use of CBC without padding and static IV"", ""AES/GCM/NoPadding with SecureRandom IV"", ""Yes, if object 'a' is instantiated with valid parameters"", 85}
+{a.java, IvParameterSpec, 13, ""Static IV in CBC mode"", ""Static IV in CBC mode"", ""Use a random IV generated by SecureRandom"", ""Yes, if object 'a' is instantiated with valid parameters"", 90}
+{a.java, SecretKeySpec, 14, ""Static key with getBytes()"", ""Static key with getBytes()"", ""Use a properly derived key from a secure key derivation function"", ""Yes, if object 'a' is instantiated with valid parameters"", 95}
+```
+"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.net.blueworldcosmetics-a.java
+"```csv
+{app.ng.katlego.a.java, Cipher, 17, Cipher.getInstance(""AES/CBC/NoPadding"") – use of NoPadding is insecure., NoPadding mode is used, Use ""AES/CBC/PKCS5Padding"" for proper padding during decryption., Not executed from Main Method, 95%}
+{app.ng.katlego.a.java, Cipher, 32, Potential padding oracle attack due to manual byte stripping after decryption., Manual padding removal, Rely on a standard padding scheme like PKCS5Padding to handle padding automatically., Not executed from Main Method, 90%}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.ng.katlego-a.java
+"```csv
+{app.remesas.vzla.a.java, Cipher.getInstance, 18, ""NoPadding mode being used"", ""NoPadding mode being used"", ""Use AES/CBC/PKCS5Padding or AES/CBC/PKCS7Padding"", N/A, 90}
+{app.remesas.vzla.a.java, Cipher.init, 32, ""No issues in all paths"", ""No IV validation, static SecretKeySpec with no validation"", ""Validate IV and SecretKeySpec size and randomness"", N/A, 80}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.remesas.vzla-a.java
+"```csv
+{a.java, IvParameterSpec, 11, None, None, None, Not explicitly mentioned, 90%}
+{a.java, SecretKeySpec, 12, None, None, None, Not explicitly mentioned, 90%}
+{a.java, Cipher, 13, Use of NoPadding in Cipher, Use of NoPadding in Cipher, Use a padding scheme like ""AES/CBC/PKCS5Padding"", Not explicitly mentioned, 95%}
+{a.java, Cipher.init, 29, None, None, None, Not explicitly mentioned, 85%}
+{a.java, Cipher.doFinal, 30, None, None, None, Not explicitly mentioned, 85%}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.restaurantenaweb.delivery-a.java
+"```csv
+{a.java, Cipher, 14, Use of NoPadding, Use of NoPadding, AES/CBC/PKCS5Padding, Not executed from main, 90}
+{a.java, SecretKeySpec, 12, Weak key generation from string, Weak key generation from string, Use a key derivation function like PBKDF2, Not executed from main, 95}
+{a.java, IvParameterSpec, 11, IV derived directly from user provided string, IV derived directly from user provided string, Generate IV randomly and transmit alongside ciphertext, Not executed from main, 85}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\app.s.jagoanssh_com-a.java
+"```csv
+{a.java, Cipher, 19, Use of static IV could lead to vulnerabilities, Static IV is used, Consider using a random IV for every encryption operation, No, 90%}
+{a.java, Cipher.getInstance, 19, The ""AES/CBC/NoPadding"" mode might be insecure due to padding oracle attacks, ""AES/CBC/NoPadding"" used, Use ""AES/GCM/NoPadding"" for authenticated encryption, No, 95%}
+{a.java, IvParameterSpec, 13, Static IV, Static IV is used, Generate a random IV for every encryption operation, No, 90%}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\area.client.daxportugal-a.java
+"```csv
+{a.java, Cipher, 18, Use of ECB mode is insecure due to lack of IV; should use ""AES/CBC/PKCS5Padding"" or ""AES/GCM/NoPadding"", Use of ""AES/CBC/NoPadding"", ""AES/CBC/PKCS5Padding"" or ""AES/GCM/NoPadding"", No, 95}
+{a.java, IvParameterSpec, 13, Hardcoded IV or lack of randomness can lead to vulnerabilities, Random or cryptographically secure IV should be generated, Random or cryptographically secure IV, No, 85}
+{a.java, SecretKeySpec, 14, Secret key derived from a weak source or directly from a password, Use PBKDF2 with salt, Use PBKDF2 with salt, No, 80}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\arpors.goyal.smemultinational-a.java
+"```csv
+{a.java, Cipher.getInstance, 18, Use of AES/CBC/NoPadding is not secure without proper padding scheme, Use of AES/CBC/NoPadding is not secure without proper padding scheme, Use AES/GCM/NoPadding for secure encryption, N/A, 95}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\artebo.it.artisti-a.java
+"```csv
+{a.java, Cipher.getInstance, 21, Use of NoPadding with AES, Yes, Use AES/CBC/PKCS5Padding, No, 95%}
+{a.java, Cipher.init, 38, None Detected, None Detected, N/A, No, 95%}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\ascend.advisory.bizzsolutions-a.java
+"```
+CSV Format:
+{a.java, Cipher, 19, Use of ""AES/CBC/NoPadding"" without MAC leads to padding oracle vulnerabilities, Yes, AES/GCM/NoPadding, No, 95}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\2\asia.mcproject.safelink-a.java

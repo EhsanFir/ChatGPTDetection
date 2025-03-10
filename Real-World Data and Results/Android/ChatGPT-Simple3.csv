@@ -1,0 +1,85 @@
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static IV and Key Size}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding in Cipher Mode}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\bangladesh.cadet.academy-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded IV}
+{Vulnerabl:Yes,Name of vulnerability:Static Key}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding}
+{Vulnerabl:No,Name of vulnerability:Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\bd.kroy.app-a.java
+"```csv
+{Vulnerable: Yes, Name of vulnerability: Hardcoded Encryption Parameters}
+{Vulnerable: Yes, Name of vulnerability: No Padding in AES Cipher}
+{Vulnerable: Yes, Name of vulnerability: Static IV}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\biermann.car.care-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of static encryption key}
+{Vulnerabl:Yes,Name of vulnerability:Use of AES/CBC/NoPadding}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.borabora.loja-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of Fixed IV}
+{Vulnerabl:Yes,Name of vulnerability:No Padding Scheme}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.chefexpress.app-a.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB Mode for Encryption}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Cryptographic Keys}
+{Vulnerabl:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.com.doutrinafiel-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Static IV}
+{Vulnerable:Yes,Name of vulnerability:No Padding Scheme Validation}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.goshopping.app-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of NoPadding in AES/CBC}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.juicedelivery.app-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of AES with static key/IV}
+{Vulnerable:Yes,Name of vulnerability:Cipher initialization without padding}
+{Vulnerable:Yes,Name of vulnerability:Lack of proper error handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.lbfood.app-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Padding Oracle Attack due to NoPadding mode}
+{Vulnerabl:Yes,Name of vulnerability:Weak Key/IV Generation from Strings}
+{Vulnerabl:Yes,Name of vulnerability:Potential Information Leakage through Exception Messages}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.lbfoodcomerciante.app-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of Static IV for AES Encryption}
+{Vulnerable:Yes,Name of vulnerability:No Padding Scheme in AES Encryption}
+{Vulnerable:Yes,Name of vulnerability:Potential Information Leak via Exception Message}
+{Vulnerable:No,Name of vulnerability:Use of Deprecated/Weak Algorithms}
+{Vulnerable:No,Name of vulnerability:Hardcoded Secrets}
+{Vulnerable:No,Name of vulnerability:SQL Injection}
+{Vulnerable:No,Name of vulnerability:Command Injection}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.lbfoodmoto.app-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Insecure Randomness}
+{Vulnerabl:Yes,Name of vulnerability:Use of AES with NoPadding}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Cryptographic Keys}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\br.spbank.app-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Insecure Cipher Initialization}
+{Vulnerable:Yes,Name of vulnerability:Cipher Reuse}
+{Vulnerable:Yes,Name of vulnerability:Insecure Randomness}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\cdom.taqqqta.matads-zzaw.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of static IV}
+{Vulnerable:Yes,Name of vulnerability:NoPadding in AES/CBC mode}
+{Vulnerable:Yes,Name of vulnerability:Potential NullPointerException}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\cellpoint.sylhet.app-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Static AES Key}
+{Vulnerable:Yes,Name of vulnerability:Static IV Vector}
+{Vulnerable:Yes,Name of vulnerability:NoPadding Used in AES}
+{Vulnerable:Yes,Name of vulnerability:Lack of Input Validation}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\cms.coopify.app-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Cryptographic Parameters}
+{Vulnerable:Yes,Name of vulnerability:Use of AES without Padding}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+{Vulnerable:Yes,Name of vulnerability:Potential Information Leakage through Stack Trace}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\com.aaa.service-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded IV and Key}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Mode}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\3\com.abdussamadsamadani.malayalam_speech-a.java

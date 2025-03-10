@@ -1,0 +1,70 @@
+"```csv
+{Vulnerability:Yes,Name of vulnerability:Hardcoded Key and IV}
+{Vulnerability:Yes,Name of vulnerability:NoPadding Usage}
+{Vulnerability:Yes,Name of vulnerability:General Exception Catching}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aamra.korbo.joy-a.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Cipher Reuse}
+{Vulnerable:Yes,Name of vulnerability:Null SecureRandom}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+{Vulnerable:Yes,Name of vulnerability:Weak XOR}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Key Length}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-ahj.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Missing Provider Verification}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-yy.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-zb.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-zc.java"
+"{Vulnerabl:No,Name of vulnerability}C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-zd.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abalone.nepo.app-ze.java"
+"```csv
+{Vulnerabl:No,Name of vulnerability}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abbb.parkpolucecar.nofalsenewapp-yy.java"
+"```csv
+{Vulnerabl:No}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abbb.parkpolucecar.nofalsenewapp-yz.java"
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\abbb.parkpolucecar.nofalsenewapp-za.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Fixed XOR key}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded encryption parameters}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.dualexplorer-sz.java"
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Fixed XOR Key}
+{Vulnerable:Yes,Name of vulnerability:Potential Key and IV Exposure}
+{Vulnerable:Yes,Name of vulnerability:Use of ECB Mode}
+{Vulnerable:Yes,Name of vulnerability:Incomplete Exception Handling}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.iconbar-sz.java"
+"```
+{Vulnerable:Yes,Name of vulnerability:Use of static IV}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.koabacus-sz.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerabl:Yes,Name of vulnerability:XOR Encryption Weakness}
+{Vulnerabl:No,Name of vulnerability:}
+{Vulnerabl:No,Name of vulnerability:}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.lotto-sz.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Key XOR}
+{Vulnerabl:No,Name of vulnerability:Cipher Mode}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\aboard.and.magichangul-o.java"
+"```
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Initialization Vector}
+{Vulnerable:Yes,Name of vulnerability:NoPadding Usage}
+{Vulnerable:Yes,Name of vulnerability:Weak Exception Handling}
+{Vulnerable:Yes,Name of vulnerability:Potential Null Pointer Exception}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\academy.marius.leontiuc-a.java"
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:SQL Injection}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded AES Key}
+{Vulnerabl:Yes,Name of vulnerability:Unencrypted Storage of Sensitive Data}
+{Vulnerabl:Yes,Name of vulnerability:Improper Use of Content Providers}
+{Vulnerabl:Yes,Name of vulnerability:Insufficient Exception Handling}
+```C:\Users\ef28\Desktop\Android Test Set\Files\1\ajt274.psovdxoieon274.kgjvbqpsss274-Ohzylmnvkajcbrdxw.java"

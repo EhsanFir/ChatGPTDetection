@@ -1,0 +1,102 @@
+"```
+{Vulnerabl:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.al.dlnaserver-ProviderJcaJceHelper.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of ECB Mode}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Algorithm Names (RC5)}
+{Vulnerable:No,Name of vulnerability:}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.al.dlnaserver-RC5.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:No Exception Handling}
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB Mode}
+{Vulnerabl:Yes,Name of vulnerability:Static IV in AlgorithmParameters}
+{Vulnerabl:Yes,Name of vulnerability:Unsupported Parameter Specification}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.al.dlnaserver-RC6.java
+"```csv
+{Vulnerable:No,Name of vulnerability}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.al.dlnaserver-SEED.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of Predictable Random Values}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.al.dlnaserver-Shacal2.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of fixed-size initialization vector}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.al.dlnaserver-SM4.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of vulnerable cryptographic algorithms (RC4 and DES)}
+{Vulnerabl:Yes,Name of vulnerability:Lack of null or adequate exception handling (e.g., ignoring exceptions when getting SecureRandom)}
+{Vulnerabl:Yes,Name of vulnerability:Predictable random number generation as SecureRandom instance creation is not checked for success}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.alekoleg.ldbada-NTLMEngineImpl.java
+"```
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded Encryption Key and IV}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Encryption Mode}
+{Vulnerabl:Yes,Name of vulnerability:Primitive Exception Handling with Stack Trace Disclosure}
+{Vulnerabl:Yes,Name of vulnerability:Potential Null Pointer Dereference}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.ams.academy-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of ECB mode without padding}
+{Vulnerabl:Yes,Name of vulnerability:Insecure IV management}
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded encryption key size}
+{Vulnerabl:Yes,Name of vulnerability:Lack of input validation}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.an.gallery-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of MD5 for cryptographic purposes}
+{Vulnerable:Yes,Name of vulnerability:Use of RC4 encryption}
+{Vulnerable:Yes,Name of vulnerability:Use of static IV for DES encryption}
+{Vulnerable:Yes,Name of vulnerability:DES encryption is inherently insecure}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.Androidwebxds-C0034.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Initialization Vector (IV)}
+{Vulnerable:Yes,Name of vulnerability:No Padding Scheme in Cipher Mode}
+{Vulnerable:Yes,Name of vulnerability:Use of Static Key}
+{Vulnerable:Yes,Name of vulnerability:Lack of Input Validation}
+{Vulnerable:Yes,Name of vulnerability:Catch and Report Generic Exception}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.apex.trading-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Hardcoded Encryption Parameters}
+{Vulnerable:Yes,Name of vulnerability:Use of NoPadding Mode}
+{Vulnerable:Yes,Name of vulnerability:Improper Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.apnasathi-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Static Initialization Vector (IV)}
+{Vulnerable:Yes,Name of vulnerability:No Padding Scheme}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.artikelcara10-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Cipher with NoPadding}
+{Vulnerable:Yes,Name of vulnerability:Hardcoded IV or Key}
+{Vulnerable:No,Name of vulnerability:Improper Exception Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.avilltech-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:StaticKeyAndIv}
+{Vulnerable:Yes,Name of vulnerability:ECBUsage}
+{Vulnerable:Yes,Name of vulnerability:ExceptionHandling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.emilyagrosv2-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of 'AES/CBC/NoPadding' which is insecure due to lack of padding and vulnerability to padding oracle attacks}
+{Vulnerabl:Yes,Name of vulnerability:Use of static IV leads to insecure encryption}
+{Vulnerabl:Yes,Name of vulnerability:Potential information exposure due to printing stack trace}
+{Vulnerabl:Yes,Name of vulnerability:Use of Exception without specific exception or secure handling mechanisms}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.gmart360-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of AES with static IV}
+{Vulnerable:Yes,Name of vulnerability:NoPadding used in AES/CBC}
+{Vulnerable:Yes,Name of vulnerability:Exception handling reveals sensitive information}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.johnpstore-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Use of AES/CBC/NoPadding}
+{Vulnerabl:Yes,Name of vulnerability:Static Key and IV}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.oldkashmirimages-a.java
+"```csv
+{Vulnerabl:Yes,Name of vulnerability:Hardcoded IV}
+{Vulnerabl:Yes,Name of vulnerability:Static Key Usage}
+{Vulnerabl:Yes,Name of vulnerability:NoPadding Usage}
+{Vulnerabl:Yes,Name of vulnerability:Improper Error Handling}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.pishonapp-a.java
+"```csv
+{Vulnerable:Yes,Name of vulnerability:Use of a Fixed IV}
+
+{Vulnerable:Yes,Name of vulnerability:No Padding Scheme}
+
+{Vulnerable:Yes,Name of vulnerability:Insecure Exception Handling}
+
+{Vulnerable:Yes,Name of vulnerability:Potential Null Pointer Dereference}
+```"C:\Users\ef28\Desktop\Android Test Set\Files\5\com.app.rechargepluss-a.java
