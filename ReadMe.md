@@ -1,4 +1,4 @@
-# ChatGPT as a Cryptography Misuse Detector
+# Can Generative AI Detect and Fix Real-World Cryptographic Misuses?
 
 ## 📂 Folder Overview  
 
