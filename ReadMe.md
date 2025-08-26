@@ -9,7 +9,7 @@
 - The prompts used for detection tasks  
 
 ### `Real_World_Data_and_Results/`  
-- 100 GitHub and 100 Android files used for evaluation  
+- 150 GitHub and 150 Android files used for evaluation  
 - ChatGPT detection results with and without prompt engineering on these `Real_World` codes (GitHub and Android Java code files)
 - CryptoGuard Result for Android files
 
